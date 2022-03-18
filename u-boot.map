@@ -1,0 +1,2872 @@
+Archive member included because of file (symbol)
+
+/home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_lshrdi3.o)
+                              lib/libgeneric.o (__aeabi_llsr)
+/home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashrdi3.o)
+                              drivers/video_sunxi/libvideo_sunxi.o (__aeabi_lasr)
+/home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashldi3.o)
+                              drivers/mmc/libmmc.o (__aeabi_llsl)
+/home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_addsubdf3.o)
+                              drivers/power/libpower.o (__aeabi_i2d)
+/home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_muldivdf3.o)
+                              drivers/power/libpower.o (__aeabi_dmul)
+/home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_fixdfsi.o)
+                              drivers/power/libpower.o (__aeabi_d2iz)
+/home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_truncdfsf2.o)
+                              drivers/srclib/libjpeddec.o (__aeabi_d2f)
+/home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_addsubsf3.o)
+                              drivers/srclib/libjpeddec.o (__aeabi_fsub)
+/home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_muldivsf3.o)
+                              drivers/srclib/libjpeddec.o (__aeabi_fmul)
+/home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_fixsfsi.o)
+                              drivers/srclib/libjpeddec.o (__aeabi_f2iz)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x40900000                . = 0x40900000
+                0x40900000                . = ALIGN (0x4)
+
+.head           0x40900000      0x500
+ arch/arm/cpu/armv7/sun8iw8/spare_head.o(.data)
+ .data          0x40900000      0x500 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+                0x40900000                uboot_spare_head
+                0x40900500                . = ALIGN (0x1)
+
+.text           0x40900500    0x52494
+                0x40900500                __int_vector_start = .
+ arch/arm/cpu/armv7/start.o(.text*)
+ .text          0x40900500      0x500 arch/arm/cpu/armv7/start.o
+                0x40900500                _start
+                0x40900540                _end_vect
+                0x40900540                _TEXT_BASE
+                0x40900544                _bss_start_ofs
+                0x40900548                _image_copy_end_ofs
+                0x4090054c                _bss_end_ofs
+                0x40900550                _end_ofs
+                0x40900554                __int_vector_start__
+                0x40900558                __int_vector_end__
+                0x4090055c                _standby_start__
+                0x40900560                _standby_end__
+                0x40900564                _standby_start_lma__
+                0x40900568                IRQ_STACK_START
+                0x4090056c                FIQ_STACK_START
+                0x40900570                IRQ_STACK_START_IN
+                0x409005a8                relocate_code
+                0x40900a00                __int_vector_end = .
+ *(EXCLUDE_FILE(board/sunxi/sun8iw8/standby/libstandby.o) .text)
+ .text          0x40900a00        0x0 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+ .text          0x40900a00      0x32c arch/arm/cpu/armv7/libarmv7.o
+                0x40900bb0                invalidate_dcache_all
+                0x40900bc4                flush_dcache_all
+                0x40900bd8                flush_icache_all
+                0x40900be4                invalidate_dcache_range
+                0x40900c08                flush_dcache_range
+                0x40900c2c                arm_init_before_mmu
+                0x40900c54                flush_cache
+                0x40900c5c                invalidate_icache_all
+                0x40900c74                __v7_outer_cache_enable
+                0x40900c78                v7_outer_cache_disable
+                0x40900c78                __v7_outer_cache_disable
+                0x40900c7c                __v7_outer_cache_flush_all
+                0x40900c7c                v7_outer_cache_flush_all
+                0x40900c80                __v7_outer_cache_inval_all
+                0x40900c84                __v7_outer_cache_flush_range
+                0x40900c88                __v7_outer_cache_inval_range
+                0x40900c88                v7_outer_cache_inval_range
+                0x40900c8c                save_boot_params_default
+                0x40900c8c                save_boot_params
+                0x40900c90                cleanup_before_linux
+                0x40900cb0                __cpu0_set_detected_paras
+                0x40900cb4                arch_cpu_init
+                0x40900cc8                sdelay
+                0x40900cd4                sr32
+                0x40900cf8                wait_on_value
+ .text          0x40900d2c     0x2ed4 arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+                0x40900e9c                irq_enable
+                0x40900f14                irq_disable
+                0x40900f8c                irq_install_handler
+                0x40900fd4                irq_free_handler
+                0x4090100c                do_irq
+                0x409010f8                arch_interrupt_init
+                0x40901134                arch_interrupt_exit
+                0x40901148                sunxi_clock_get_corepll
+                0x40901190                sunxi_clock_get_axi
+                0x409011f0                sunxi_clock_get_apb2
+                0x409011f8                sunxi_clock_set_corepll
+                0x409012c4                sunxi_clock_get_pll6
+                0x409012f4                sunxi_clock_get_ahb
+                0x40901348                sunxi_clock_get_apb1
+                0x40901380                timer1_func
+                0x409013e0                timer0_func
+                0x40901440                timer_init
+                0x40901478                timer_exit
+                0x409014c0                watchdog_disable
+                0x409014d4                watchdog_enable
+                0x409014ec                get_timer
+                0x40901508                runtime_tick
+                0x40901518                get_timer_masked
+                0x40901528                __usdelay
+                0x40901550                __msdelay
+                0x40901570                get_ticks
+                0x4090158c                get_tbclk
+                0x40901594                init_timer
+                0x40901598                add_timer
+                0x409016b4                del_timer
+                0x40901730                stick_printf
+                0x40901754                tick0_printf
+                0x409017a8                print_boot_type
+                0x40901824                get_base
+                0x40901830                s_init
+                0x40901834                reset_cpu
+                0x40901840                v7_outer_cache_enable
+                0x40901844                v7_outer_cache_inval_all
+                0x40901848                v7_outer_cache_flush_range
+                0x4090184c                enable_caches
+                0x4090185c                disable_caches
+                0x4090186c                display_inner
+                0x4090188c                script_init
+                0x409018d0                power_source_init
+                0x40901998                sunxi_key_init
+                0x409019c8                sunxi_key_exit
+                0x409019e8                sunxi_key_read
+                0x40901a40                do_key_test
+                0x40901a88                USBC_GetVbusStatus
+                0x40901ab8                USBC_OTG_SelectMode
+                0x40901abc                USBC_ReadLenFromFifo
+                0x40901ae8                USBC_WritePacket
+                0x40901b54                USBC_ReadPacket
+                0x40901bc0                USBC_ConfigFIFO_Base
+                0x40901bfc                USBC_GetPortFifoStartAddr
+                0x40901c2c                USBC_GetPortFifoSize
+                0x40901c50                USBC_SelectFIFO
+                0x40901c60                __USBC_ConfigFifo_TxEp
+                0x40901cb0                __USBC_ConfigFifo_RxEp_Default
+                0x40901cc0                __USBC_ConfigFifo_RxEp
+                0x40901d10                USBC_ConfigFifo_Default
+                0x40901d48                USBC_ConfigFifo
+                0x40901d84                USBC_GetLastFrameNumber
+                0x40901d94                USBC_GetStatus_Dp
+                0x40901da8                USBC_GetStatus_Dm
+                0x40901dbc                USBC_GetStatus_DpDm
+                0x40901ddc                USBC_GetOtgMode_Form_ID
+                0x40901df4                USBC_GetOtgMode_Form_BDevice
+                0x40901e0c                USBC_SelectBus
+                0x40901e50                USBC_INT_EpPending
+                0x40901e8c                USBC_INT_ClearEpPending
+                0x40901ee0                USBC_INT_ClearEpPendingAll
+                0x40901f18                USBC_INT_MiscPending
+                0x40901f28                USBC_INT_ClearMiscPending
+                0x40901f3c                USBC_INT_ClearMiscPendingAll
+                0x40901f50                USBC_INT_EnableEp
+                0x40901fa4                USBC_INT_EnableUsbMiscUint
+                0x40901fc0                USBC_INT_DisableEp
+                0x4090200c                USBC_INT_DisableUsbMiscUint
+                0x40902024                USBC_INT_DisableEpAll
+                0x40902054                USBC_INT_DisableUsbMiscAll
+                0x40902068                USBC_GetActiveEp
+                0x40902078                USBC_SelectActiveEp
+                0x40902088                USBC_EnhanceSignal
+                0x4090208c                USBC_EnterMode_TestPacket
+                0x409020a4                USBC_EnterMode_Test_K
+                0x409020bc                USBC_EnterMode_Test_J
+                0x409020d4                USBC_EnterMode_Test_SE0_NAK
+                0x409020ec                USBC_EnterMode_Idle
+                0x40902138                USBC_SetWakeUp_Default
+                0x4090213c                USBC_EnableIdPullUp
+                0x40902154                USBC_DisableIdPullUp
+                0x4090216c                USBC_EnableDpDmPullUp
+                0x40902184                USBC_DisableDpDmPullUp
+                0x4090219c                USBC_ForceId
+                0x409021d4                USBC_ForceVbusValid
+                0x4090221c                USBC_A_valid_InputSelect
+                0x40902220                USBC_EnableUsbLineStateBypass
+                0x40902224                USBC_DisableUsbLineStateBypass
+                0x40902228                USBC_EnableHosc
+                0x40902240                USBC_DisableHosc
+                0x40902254                USBC_IsVbusChange
+                0x40902270                USBC_IsIdChange
+                0x4090228c                USBC_IsDpDmChange
+                0x409022a8                USBC_DisableWakeIrq
+                0x409022bc                USBC_DisableVbusChange
+                0x409022d0                USBC_DisableIdChange
+                0x409022e4                USBC_DisableDpDmChange
+                0x409022f8                USBC_EnableWakeIrq
+                0x40902310                USBC_EnableVbusChange
+                0x40902328                USBC_EnableIdChange
+                0x40902340                USBC_EnableDpDmChange
+                0x40902358                USBC_TestMode_ReadReg
+                0x40902394                USBC_PrintAllReg
+                0x409026f0                USBC_open_otg
+                0x40902734                USBC_close_otg
+                0x4090275c                USBC_init
+                0x40902764                USBC_exit
+                0x409027ac                USBC_Dev_SetAddress_default
+                0x409027c0                USBC_Dev_SetAddress
+                0x409027d0                USBC_Dev_QueryTransferMode
+                0x409027f0                USBC_Dev_ConfigTransferMode
+                0x40902860                USBC_Dev_ConectSwitch
+                0x40902884                USBC_Dev_QueryPowerStatus
+                0x40902898                USBC_Dev_ConfigEp
+                0x409029a4                USBC_Dev_ConfigEp_Default
+                0x40902a0c                USBC_Dev_ConfigEpDma
+                0x40902a74                USBC_Dev_ClearEpDma
+                0x40902ae4                USBC_Dev_IsEpStall
+                0x40902b2c                USBC_Dev_EpSendStall
+                0x40902b94                USBC_Dev_EpClearStall
+                0x40902c2c                USBC_Dev_Ctrl_IsSetupEnd
+                0x40902c40                USBC_Dev_Ctrl_ClearSetupEnd
+                0x40902c58                USBC_Dev_WriteDataStatus
+                0x40902ce4                USBC_Dev_ReadDataStatus
+                0x40902d64                USBC_Dev_IsReadDataReady
+                0x40902da4                USBC_Dev_IsWriteDataReady
+                0x40902de0                USBC_Host_SetFunctionAddress_Deafult
+                0x40902e3c                USBC_Host_SetFunctionAddress
+                0x40902ec4                USBC_Host_SetHubAddress_Deafult
+                0x40902ef4                USBC_Host_SetHubAddress
+                0x40902f3c                USBC_Host_SetHPortAddress_Deafult
+                0x40902f6c                USBC_Host_SetHPortAddress
+                0x40902f94                USBC_Host_QueryTransferMode
+                0x40902fb4                USBC_Host_ConfigTransferMode
+                0x40902fe8                USBC_Host_ResetPort
+                0x40903000                USBC_Host_ClearResetPortFlag
+                0x40903018                USBC_Host_RusumePort
+                0x40903030                USBC_Host_ClearRusumePortFlag
+                0x40903048                USBC_Host_SuspendPort
+                0x40903060                USBC_Host_QueryPowerStatus
+                0x40903070                USBC_Host_StartSession
+                0x40903088                USBC_Host_EndSession
+                0x409030a0                USBC_Host_PeripheralType
+                0x409030c0                USBC_Host_FlushFifo
+                0x40903108                USBC_Host_ConfigEp_Default
+                0x4090318c                USBC_Host_ConfigEp
+                0x409032e8                USBC_Host_ConfigEpDma
+                0x4090332c                USBC_Host_ClearEpDma
+                0x4090337c                USBC_Host_IsEpNakTimeOut
+                0x409033c0                USBC_Host_ClearEpNakTimeOut
+                0x40903410                USBC_Host_IsEpError
+                0x40903464                USBC_Host_ClearEpError
+                0x409034c4                USBC_Host_IsEpStall
+                0x40903510                USBC_Host_ClearEpStall
+                0x40903570                USBC_Host_ClearEpCSR
+                0x409035ac                USBC_Host_IsReadDataReady
+                0x409035ec                USBC_Host_IsWriteDataReady
+                0x40903634                USBC_Host_ReadDataStatus
+                0x409036d0                USBC_Host_WriteDataStatus
+                0x40903754                USBC_Host_IsReqPktSet
+                0x40903794                USBC_Host_StartInToken
+                0x409037d8                USBC_Host_StopInToken
+                0x40903824                USBC_Host_ConfigRqPktCount
+                0x40903838                USBC_Host_ClearRqPktCount
+                0x4090384c                USBC_Host_EnablePing
+                0x40903868                USBC_Host_DisablePing
+                0x40903880                USBC_Host_SendCtrlStatus
+                0x409038a4                USBC_Host_SendSetupPkt
+                0x409038f0                USBC_PHY_SetCommonConfig
+                0x409038f4                USBC_PHY_SetPrivateConfig
+                0x409038f8                USBC_PHY_GetCommonConfig
+                0x40903900                USBC_phy_Standby
+                0x40903954                USBC_Phy_Standby_Recover
+                0x40903958                usb_open_clock
+                0x409039ac                usb_close_clock
+                0x40903a00                usb_probe_vbus_type
+                0x40903a64                USBC_Dma_Set_ChannalPara
+                0x40903aa8                USBC_Dma_Set_PktLen
+                0x40903ae8                USBC_Dma_Start
+                0x40903b68                USBC_Dma_Int_Stop
+                0x40903b9c                USBC_Dma_Int_Query
+                0x40903bb8                USBC_Dma_Int_Clear
+                0x40903be0                lowlevel_init
+ .text          0x40903c00      0xd40 arch/arm/lib/libarm.o
+                0x40903ca4                coloured_LED_init
+                0x40903ca4                __coloured_LED_init
+                0x40903ca8                red_LED_on
+                0x40903ca8                __red_LED_on
+                0x40903cac                __red_LED_off
+                0x40903cac                red_LED_off
+                0x40903cb0                green_LED_on
+                0x40903cb0                __green_LED_on
+                0x40903cb4                __green_LED_off
+                0x40903cb4                green_LED_off
+                0x40903cb8                __yellow_LED_on
+                0x40903cb8                yellow_LED_on
+                0x40903cbc                __yellow_LED_off
+                0x40903cbc                yellow_LED_off
+                0x40903cc0                blue_LED_on
+                0x40903cc0                __blue_LED_on
+                0x40903cc4                blue_LED_off
+                0x40903cc4                __blue_LED_off
+                0x40903cc8                __dram_init_banksize
+                0x40903ce4                __sunxi_probe_securemode
+                0x40903ce4                sunxi_probe_securemode
+                0x40903cec                __smc_init
+                0x40903cf4                board_init_f
+                0x40903e2c                board_init_r
+                0x40903f58                hang
+                0x409040dc                arch_lmb_reserve
+                0x40904100                do_bootm_linux
+                0x409041e0                do_boota_linux
+                0x409044c0                __flush_cache
+                0x409044c4                __flush_dcache_all
+                0x409044d0                __enable_caches
+                0x4090465c                __arm_init_before_mmu
+                0x40904660                icache_enable
+                0x40904668                icache_disable
+                0x40904670                icache_status
+                0x4090467c                dcache_enable
+                0x40904684                dcache_disable
+                0x4090468c                dcache_status
+                0x40904698                interrupt_init
+                0x409046d8                interrupt_exit
+                0x409046dc                enable_interrupts
+                0x409046ec                disable_interrupts
+                0x40904708                bad_mode
+                0x40904718                show_regs
+                0x40904858                do_undefined_instruction
+                0x40904878                do_software_interrupt
+                0x40904898                do_prefetch_abort
+                0x409048b8                do_data_abort
+                0x409048d8                do_not_used
+                0x409048f8                do_fiq
+                0x40904918                do_reset
+ .text          0x40904940     0xcf9c common/libcommon.o
+                0x40904940                do_go_exec
+                0x40904958                do_go
+                0x409049cc                __do_sunxi_boot_signature
+                0x409049d4                memcpy2
+                0x40904a28                do_boota
+                0x40904b10                do_bootd
+                0x4090525c                arch_preboot_os
+                0x4090525c                __arch_preboot_os
+                0x40905260                do_bootm_subcommand
+                0x409054a4                do_bootm
+                0x40905738                bootm_maybe_autostart
+                0x409057ac                do_burn_test
+                0x40905944                do_bootelf_exec
+                0x40905988                valid_elf_image
+                0x409059d4                do_bootvx
+                0x40905c20                do_bootelf
+                0x40905d98                do_exit
+                0x40905dc8                do_fat_fsinfo
+                0x40905ea0                do_fat_ls
+                0x40905fa8                do_fat_fsdown
+                0x40906118                do_fat_fsload
+                0x40906284                fat_fsload_file
+                0x4090632c                do_efex
+                0x40906348                do_help
+                0x4090638c                do_sysconfig
+                0x409064cc                do_delay_test
+                0x4090651c                do_memcpy_test
+                0x40906550                do_efex_test
+                0x4090658c                do_mass_test
+                0x409065c8                do_fastboot_test
+                0x40906604                do_sprite_test
+                0x40906748                do_power_probe
+                0x409067ac                do_timer_test1
+                0x4090682c                do_timer_test
+                0x409068ac                do_mem_base
+                0x409068ec                do_mem_mtest
+                0x40906a8c                do_mem_loop
+                0x40906b80                do_mem_md
+                0x40906c54                do_mem_crc
+                0x40906cfc                do_mem_cp
+                0x40906ddc                do_mem_cmp
+                0x40906f68                do_mem_mw
+                0x40907160                do_mem_nm
+                0x40907178                do_mem_mm
+                0x40907190                do_mmcops
+                0x40907580                do_mmcinfo
+                0x40907ab4                do_modify_cfg
+                0x40907bd0                do_savecfg
+                0x40907f80                do_env_save
+                0x40908044                do_env_print
+                0x409080c4                get_env_id
+                0x409080d4                _do_env_set
+                0x4090846c                do_env_set
+                0x40908488                setenv
+                0x409086e4                envmatch
+                0x40908748                getenv_f
+                0x40908800                getenv
+                0x4090886c                do_onekey_sprite_recovery
+                0x40908974                do_shutdown
+                0x40908978                do_standby
+                0x40908b48                sunxi_bmp_decode
+                0x40908eb0                sunxi_bmp_display
+                0x40908fac                do_sunxi_logo
+                0x40908fb8                do_sunxi_flash
+                0x40909204                memtester_pagesize
+                0x4090921c                usage
+                0x40909538                probe_high_level_power_mod
+                0x40909574                rsa_init
+                0x409095f4                rsa_dump
+                0x40909678                rsa_encrypt
+                0x409096b8                rsa_decrypt
+                0x409096fc                prepareCryptTable
+                0x40909700                HashString
+                0x40909b4c                HashString_init
+                0x40909b60                signature_erase_all
+                0x40909c6c                sunxi_oem_op_lock
+                0x4090a008                do_sunxi_boot_signature
+                0x4090a1ec                save_user_private_data
+                0x4090a420                do_save_user_data
+                0x4090a454                check_user_data
+                0x4090a600                update_user_data
+                0x4090a74c                do_false
+                0x4090a754                do_true
+                0x4090a75c                do_test
+                0x4090abc8                do_version
+                0x4090ac00                find_cmd_tbl
+                0x4090ac9c                find_cmd
+                0x4090acc4                cmd_usage
+                0x4090ad20                _do_help
+                0x4090aea4                var_complete
+                0x4090af2c                cmd_auto_complete
+                0x4090b3a8                cmd_get_data_size
+                0x4090b49c                serial_printf
+                0x4090b4dc                fgetc
+                0x4090b508                ftstc
+                0x4090b534                fputc
+                0x4090b55c                fputs
+                0x4090b584                fprintf
+                0x4090b5cc                getc
+                0x4090b5e4                tstc
+                0x4090b5fc                putc
+                0x4090b618                puts
+                0x4090b634                printf
+                0x4090b674                tick_printf
+                0x4090b6e4                vprintf
+                0x4090b718                ctrlc
+                0x4090b764                disable_ctrlc
+                0x4090b77c                had_ctrlc
+                0x4090b78c                clear_ctrlc
+                0x4090b7a0                dbg
+                0x4090b7ac                search_device
+                0x4090b7d4                console_assign
+                0x4090b814                console_init_f
+                0x4090b824                stdio_print_current_devices
+                0x4090b8d8                console_init_r
+                0x4090b9b8                sbrk
+                0x4090ba14                mem_malloc_init
+                0x4090ba38                malloc_trim
+                0x4090bb08                free
+                0x4090bd28                cfree
+                0x4090bd2c                malloc
+                0x4090c2f8                calloc
+                0x4090c3cc                memalign
+                0x4090c4d4                pvalloc
+                0x4090c4ec                valloc
+                0x4090c4f8                realloc
+                0x4090c900                malloc_usable_size
+                0x4090c93c                mallopt
+                0x4090c9b0                env_get_addr
+                0x4090c9d4                env_get_char_memory
+                0x4090c9e4                env_get_char
+                0x4090ca18                set_default_env
+                0x4090cab8                env_import
+                0x4090cb84                env_relocate
+                0x4090cbb4                env_complete
+                0x4090ce8c                env_get_char_spec
+                0x4090ce98                env_init
+                0x4090ceb4                saveenv
+                0x4090ced8                env_relocate_spec
+                0x4090cf04                get_version
+                0x4090cf0c                jumptable_init
+                0x4090d338                do_showvar
+                0x4090d87c                simple_itoa
+                0x4090d8c0                get_local_var
+                0x4090da84                set_local_var
+                0x4090dc40                unset_local_var
+                0x4090dce0                new_pipe
+                0x4090dd50                reserved_word
+                0x4090e014                mapset
+                0x4090e038                update_ifs_map
+                0x4090e0a8                parse_string_outer
+                0x4090ef94                parse_file_outer
+                0x4090efd8                u_boot_hush_start
+                0x4090f060                image_check_hcrc
+                0x4090f0b0                image_check_dcrc
+                0x4090f0ec                image_multi_count
+                0x4090f110                image_multi_getimg
+                0x4090f194                getenv_yesno
+                0x4090f1bc                getenv_bootm_low
+                0x4090f1ec                getenv_bootm_size
+                0x4090f248                getenv_bootm_mapsize
+                0x4090f278                memmove_wd
+                0x4090f284                genimg_print_size
+                0x4090f2b4                get_table_entry_name
+                0x4090f2e0                genimg_get_os_name
+                0x4090f2f8                genimg_get_arch_name
+                0x4090f310                genimg_get_type_name
+                0x4090f328                genimg_get_comp_name
+                0x4090f340                image_print_contents
+                0x4090f4b8                get_table_entry_id
+                0x4090f504                genimg_get_os_id
+                0x4090f51c                genimg_get_arch_id
+                0x4090f534                genimg_get_type_id
+                0x4090f54c                genimg_get_comp_id
+                0x4090f564                genimg_get_format
+                0x4090f578                genimg_get_image
+                0x4090f57c                genimg_has_config
+                0x4090f584                boot_get_ramdisk
+                0x4090f7b4                boot_ramdisk_high
+                0x4090f8d4                boot_get_cmdline
+                0x4090fb14                __show_boot_progress
+                0x4090fb14                show_boot_progress
+                0x4090fb18                main_loop
+                0x4090fc14                readline_into_buffer
+                0x4091053c                readline
+                0x40910558                parse_line
+                0x409105e4                run_command
+                0x40910990                do_run
+                0x40910a04                get_ram_size
+                0x40910b78                srec_decode
+                0x40910dd8                stdio_get_list
+                0x40910de4                stdio_get_by_name
+                0x40910e38                stdio_clone
+                0x40910e80                stdio_register
+                0x40910ec4                stdio_init
+                0x40910f4c                mem_noncache_malloc_init
+                0x40910f78                malloc_noncache
+                0x40910ff4                free_noncache
+                0x40911034                CYGACC_COMM_IF_GETC_TIMEOUT
+                0x40911318                CYGACC_COMM_IF_PUTC
+                0x40911320                parse_num
+                0x4091143c                xyzModem_stream_open
+                0x40911588                xyzModem_stream_read
+                0x409117d8                xyzModem_stream_close
+                0x40911828                xyzModem_stream_terminate
+                0x409118bc                xyzModem_error
+ .text          0x409118dc      0x8b4 disk/libdisk.o
+                0x409118dc                get_dev
+                0x4091193c                dev_print
+                0x40911b30                init_part
+                0x40911b4c                get_partition_info
+                0x40911b74                print_part
+                0x409120e0                test_part_dos
+                0x40912148                print_part_dos
+                0x40912174                get_partition_info_dos
+ .text          0x40912190      0x568 drivers/dma/libdma.o
+                0x4091222c                sunxi_dma_init
+                0x409122d4                __sunxi_disable_dma_clock
+                0x409122d4                sunxi_disable_dma_clock
+                0x409122d8                sunxi_dma_request
+                0x4091232c                sunxi_dma_setting
+                0x40912384                sunxi_dma_start
+                0x409123bc                sunxi_dma_stop
+                0x409123d8                sunxi_dma_querystatus
+                0x40912400                sunxi_dma_install_int
+                0x40912478                sunxi_dma_enable_int
+                0x40912530                sunxi_dma_disable_int
+                0x409125dc                sunxi_dma_free_int
+                0x40912634                sunxi_dma_release
+                0x40912670                sunxi_dma_exit
+ .text          0x409126f8      0x63c drivers/i2c/libi2c.o
+                0x409128d0                i2c_init
+                0x40912a20                i2c_exit
+                0x40912a38                i2c_read
+                0x40912c48                i2c_write
+ .text          0x40912d34     0x42d0 drivers/mmc/libmmc.o
+                0x40912d3c                __board_mmc_getcd
+                0x40912d3c                board_mmc_getcd
+                0x40912d44                mmc_send_cmd
+                0x40912d54                mmc_send_status
+                0x40912e28                mmc_set_blocklen
+                0x40912e74                mmc_send_manual_stop
+                0x40912ec8                find_mmc_device
+                0x4091317c                mmc_read_blocks
+                0x409133fc                mmc_go_idle
+                0x40913460                sd_send_op_cond
+                0x409135dc                mmc_send_op_cond
+                0x4091375c                mmc_send_ext_csd
+                0x409137c8                mmc_switch
+                0x40913834                mmc_change_freq
+                0x40913940                mmc_switch_boot_bus_cond
+                0x40913a18                mmc_switch_boot_part
+                0x40913ae0                mmc_switch_part
+                0x40913e14                sd_switch
+                0x40913e84                sd_change_freq
+                0x40914088                mmc_set_ios
+                0x40914098                mmc_set_clock
+                0x409142ec                mmc_set_bus_width
+                0x40914300                mmc_startup
+                0x40914d70                mmc_send_if_cond
+                0x40914e00                mmc_register
+                0x40914e9c                mmc_unregister
+                0x40914ea4                mmc_get_dev
+                0x40914eb8                sunxi_need_rty
+                0x40914f14                mmc_write_info
+                0x40914fb0                mmc_init
+                0x4091585c                cpu_mmc_init
+                0x40915864                print_mmc_devices
+                0x409158c8                get_mmc_num
+                0x409158cc                mmc_initialize
+                0x409158f8                mmc_exit
+                0x409159fc                sunxi_detail_errno
+                0x40915fb4                sunxi_decide_rty
+                0x4091635c                sunxi_update_sdly
+                0x409163ec                mmc_dump_errinfo
+                0x40916cec                sunxi_mmc_init
+                0x40916fe4                sunxi_mmc_exit
+ .text          0x40917004        0x0 drivers/pcmcia/libpcmcia.o
+ .text          0x40917004     0x1e74 drivers/power/libpower.o
+                0x40917004                axp_probe
+                0x40917074                axp_reinit
+                0x409170ac                axp_get_power_vol_level
+                0x409170b4                axp_probe_startup_cause
+                0x40917194                axp_set_hardware_poweron_vol
+                0x409171f0                axp_set_hardware_poweroff_vol
+                0x4091724c                axp_set_power_off
+                0x40917268                axp_probe_factory_mode
+                0x40917314                axp_set_next_poweron_status
+                0x40917330                axp_probe_pre_sys_mode
+                0x4091734c                axp_power_get_dcin_battery_exist
+                0x40917388                axp_probe_power_source
+                0x409173c0                axp_probe_battery_vol
+                0x409173dc                axp_probe_rest_battery_capacity
+                0x409173f8                axp_probe_key
+                0x40917414                axp_probe_charge_current
+                0x40917430                axp_set_charge_current
+                0x4091744c                axp_set_charge_control
+                0x40917468                axp_set_vbus_limit_dc
+                0x4091749c                axp_set_vbus_limit_pc
+                0x409174d0                axp_set_all_limit
+                0x409175a0                axp_set_suspend_chgcur
+                0x409175c0                axp_set_runtime_chgcur
+                0x409175e0                axp_set_charge_vol_limit
+                0x40917648                axp_set_power_supply_output
+                0x40917728                axp_slave_set_power_supply_output
+                0x40917864                axp_probe_power_supply_condition
+                0x40917940                axp_int_enable
+                0x4091797c                axp_int_disable
+                0x409179a0                axp_int_query
+                0x409179bc                axp_set_supply_status
+                0x409179e4                axp_set_supply_status_byname
+                0x40917a58                axp_probe_supply_status
+                0x40917a80                axp_probe_supply_status_byname
+                0x40917ae4                axp_set_supply_status_byregulator
+                0x40917cf8                axp_probe_supply_pmu_name
+                0x40917d5c                axp_probe_vbus_cur_limit
+                0x40917d78                axp20_probe_battery_ratio
+                0x40917dac                axp20_set_next_sys_mode
+                0x40917dc8                axp20_set_int_enable
+                0x40917e28                axp20_set_coulombmeter_onoff
+                0x40917e78                axp20_set_charge_control
+                0x40917edc                axp20_probe_key
+                0x40917f1c                axp20_set_power_off
+                0x40917f88                axp20_set_charge_current
+                0x40917ff4                axp20_set_vbus_cur_limit
+                0x40918060                axp20_set_vbus_vol_limit
+                0x409180d8                axp20_probe_int_pending
+                0x40918144                axp20_probe_battery_exist
+                0x40918174                axp20_probe_power_status
+                0x409181ac                axp20_probe_battery_vol
+                0x4091820c                axp20_probe_pre_sys_mode
+                0x4091822c                axp20_probe_this_poweron_cause
+                0x40918250                axp20_probe_charge_current
+                0x40918280                axp20_probe_vbus_cur_limit
+                0x40918310                axp20_probe_int_enable
+                0x40918350                axp20_probe
+                0x40918390                axp20_config_charge_current
+                0x40918454                axp20_set_power_on_vol
+                0x409184fc                axp20_set_power_off_vol
+                0x409185f4                axp20_set_power_onoff_vol
+                0x409188f8                axp20_set_supply_status
+                0x4091894c                axp20_set_supply_status_byname
+                0x40918da8                axp20_probe_supply_status
+                0x40918db0                axp20_probe_supply_status_byname
+                0x40918db8                axpnull_set_coulombmeter_onoff
+                0x40918dc0                axpnull_set_charge_control
+                0x40918dc8                axpnull_probe_battery_ratio
+                0x40918dd0                axpnull_probe_power_status
+                0x40918dd8                axpnull_probe_battery_exist
+                0x40918de0                axpnull_probe_battery_vol
+                0x40918de8                axpnull_probe_key
+                0x40918df0                axpnull_probe_pre_sys_mode
+                0x40918df8                axpnull_set_next_sys_mode
+                0x40918e00                axpnull_probe_this_poweron_cause
+                0x40918e08                axpnull_set_power_off
+                0x40918e10                axpnull_set_power_onoff_vol
+                0x40918e18                axpnull_set_charge_current
+                0x40918e20                axpnull_probe_charge_current
+                0x40918e28                axpnull_set_vbus_cur_limit
+                0x40918e30                axpnull_set_vbus_vol_limit
+                0x40918e38                axpnull_probe_int_pending
+                0x40918e40                axpnull_probe_int_enable
+                0x40918e48                axpnull_set_int_enable
+                0x40918e50                axpnull_probe_vbus_cur_limit
+                0x40918e58                axpnull_set_supply_status
+                0x40918e60                axpnull_set_supply_status_byname
+                0x40918e68                axpnull_probe_supply_status
+                0x40918e70                axpnull_probe_supply_status_byname
+ .text          0x40918e78      0x38c drivers/pwm/libsunxi_pwm.o
+                0x40918e78                sunxi_pwm_read_reg
+                0x40918e88                sunxi_pwm_write_reg
+                0x40918e9c                sunxi_pwm_get_sys_config
+                0x40918f84                sunxi_pwm_set_polarity
+                0x40918fd8                sunxi_pwm_config
+                0x40919120                sunxi_pwm_enable
+                0x40919190                sunxi_pwm_disable
+                0x409191ec                sunxi_pwm_init
+ .text          0x40919204        0x0 drivers/rtc/librtc.o
+ .text          0x40919204      0x240 drivers/serial/libserial.o
+                0x40919204                NS16550_init
+                0x4091924c                NS16550_reinit
+                0x40919298                NS16550_putc
+                0x409192ac                NS16550_getc
+                0x409192c0                NS16550_tstc
+                0x409192ec                serial_init
+                0x40919328                _serial_putc
+                0x40919360                _serial_putc_raw
+                0x4091937c                _serial_puts
+                0x409193a4                _serial_getc
+                0x409193c0                _serial_tstc
+                0x409193d4                _serial_setbrg
+                0x409193fc                serial_putc
+                0x40919408                serial_putc_raw
+                0x40919414                serial_puts
+                0x40919420                serial_getc
+                0x4091942c                serial_tstc
+                0x40919438                serial_setbrg
+ .text          0x40919444       0x5c drivers/smc/libsmc.o
+                0x40919444                smc_init
+                0x4091944c                sunxi_smc_call
+ .text          0x409194a0      0x740 drivers/spi/libspi.o
+                0x409194a0                ccm_module_disable_bak
+                0x409194c4                ccm_module_enable_bak
+                0x409194e8                ccm_clock_enable_bak
+                0x40919534                ccm_clock_disable_bak
+                0x40919580                ccm_module_reset_bak
+                0x409195a0                ccm_get_pll_periph_clk
+                0x409195d4                pattern_goto
+                0x409195d8                spi_cfg_mclk
+                0x40919678                spi_get_mlk
+                0x40919688                spi_gpio_cfg
+                0x409196ac                spi_onoff
+                0x409196e0                spic_set_clk
+                0x40919758                spic_init
+                0x40919974                spic_rw
+                0x40919b9c                spic_exit
+ .text          0x40919be0     0x1068 drivers/spinor/libspinor.o
+                0x4091a150                spinor_init
+                0x4091a224                spinor_exit
+                0x4091a28c                spinor_read
+                0x4091a318                spinor_write
+                0x4091a40c                spinor_read_nocache
+                0x4091a41c                spinor_flush_cache
+                0x4091a47c                spinor_erase_all_blocks
+                0x4091a494                spinor_erase_one_block
+                0x4091a4b8                spinor_net_datafinish
+                0x4091a4cc                spinor_size
+                0x4091a4d4                spinor_sprite_write
+                0x4091a510                spinor_datafinish
+                0x4091a5b4                spi_nor_rw_test
+                0x4091a820                try_spi_nor
+                0x4091a890                spinor_verify_img
+                0x4091a9b4                spinor_datafinish_card
+ .text          0x4091ac48     0x2e58 drivers/srclib/libjpeddec.o
+                0x4091ac70                tinyjpeg_idct_float
+                0x4091b258                convert_one_image
+                0x4091b480                jpegdec
+                0x4091c978                process_Huffman_data_unit
+                0x4091cfd0                tinyjpeg_init
+                0x4091cfdc                tinyjpeg_free
+                0x4091d018                tinyjpeg_parse_header
+                0x4091d498                tinyjpeg_decode
+                0x4091d9d8                tinyjpeg_get_printfstring
+                0x4091d9e4                tinyjpeg_get_size
+                0x4091d9f8                tinyjpeg_get_components
+                0x4091da38                tinyjpeg_set_components
+                0x4091da68                tinyjpeg_set_flags
+                0x4091da78                setjmp
+                0x4091da88                longjmp
+ .text          0x4091daa0      0xa38 drivers/storage_type/libstorage_type.o
+                0x4091db64                sunxi_flash_mmc_phyread
+                0x4091db98                sunxi_flash_mmc_phywrite
+                0x4091dc50                sunxi_sprite_mmc_phyread
+                0x4091dc84                sunxi_sprite_mmc_phywrite
+                0x4091dcb8                sunxi_sprite_mmc_force_erase
+                0x4091dcec                sunxi_flash_mmc_secread
+                0x4091dd20                sunxi_flash_mmc_secwrite
+                0x4091dd54                sunxi_sprite_setdata_finish
+                0x4091dd6c                sunxi_sprite_setdata_card_finish
+                0x4091dd84                sunxi_flash_read
+                0x4091dd9c                sunxi_flash_part_read
+                0x4091dde8                sunxi_flash_write
+                0x4091de00                sunxi_flash_part_write
+                0x4091de4c                sunxi_flash_size
+                0x4091de64                sunxi_flash_exit
+                0x4091de7c                sunxi_flash_flush
+                0x4091de94                sunxi_flash_phyread
+                0x4091deac                sunxi_flash_phywrite
+                0x4091dec4                sunxi_sprite_init
+                0x4091dedc                sunxi_sprite_read
+                0x4091def4                sunxi_sprite_write
+                0x4091df0c                sunxi_sprite_erase
+                0x4091df24                sunxi_sprite_size
+                0x4091df3c                sunxi_sprite_exit
+                0x4091df54                sunxi_sprite_flush
+                0x4091df6c                sunxi_sprite_phyread
+                0x4091df84                sunxi_sprite_phywrite
+                0x4091df9c                sunxi_sprite_force_erase
+                0x4091dfb4                sunxi_flash_get_dev
+                0x4091dfd4                sunxi_flash_init_uboot
+                0x4091e028                sunxi_flash_handle_init
+ .text          0x4091e4d8    0x15a4c drivers/video_sunxi/libvideo_sunxi.o
+                0x4091e5f8                drv_disp_check_spec
+                0x4091e6b4                drv_disp_init
+                0x4091e788                drv_disp_exit
+                0x4091e7d0                sunxi_disp_get_source_ops
+                0x4091e880                disp_ioctl
+                0x4091ee20                drv_disp_standby
+                0x4091ef54                disp_sys_cache_flush
+                0x4091ef58                disp_sys_register_irq
+                0x4091ef70                disp_sys_unregister_irq
+                0x4091ef74                disp_sys_enable_irq
+                0x4091ef78                disp_sys_disable_irq
+                0x4091ef7c                disp_sys_irqlock
+                0x4091ef80                disp_sys_irqunlock
+                0x4091ef84                disp_sys_lock
+                0x4091ef88                disp_sys_unlock
+                0x4091ef8c                disp_sys_malloc
+                0x4091efb4                disp_sys_free
+                0x4091efb8                disp_sys_script_get_item
+                0x4091f044                disp_sys_get_ic_ver
+                0x4091f04c                disp_sys_gpio_request
+                0x4091f0b4                disp_sys_gpio_release
+                0x4091f0d0                disp_sys_gpio_set_direction
+                0x4091f0d4                disp_sys_gpio_get_value
+                0x4091f0d8                disp_sys_gpio_set_value
+                0x4091f0dc                disp_sys_power_enable
+                0x4091f118                disp_sys_power_disable
+                0x4091f144                disp_sys_pwm_request
+                0x4091f14c                disp_sys_pwm_free
+                0x4091f154                disp_sys_pwm_enable
+                0x4091f15c                disp_sys_pwm_disable
+                0x4091f170                disp_sys_pwm_config
+                0x4091f178                disp_sys_pwm_set_polarity
+                0x4091f180                disp_sys_clk_set_rate
+                0x4091f434                disp_sys_clk_init
+                0x4091f4c4                disp_sys_clk_get_rate
+                0x4091f5ec                disp_sys_clk_set_parent
+                0x4091f5f4                disp_sys_clk_enable
+                0x4091f9bc                disp_sys_clk_disable
+                0x4091fbe8                bsp_disp_shadow_protect
+                0x4091fca0                bsp_disp_exit
+                0x4091fca8                bsp_disp_open
+                0x4091fcb0                bsp_disp_close
+                0x4091fce0                disp_device_attached
+                0x4091fde0                disp_device_attached_and_enable
+                0x4091ff48                disp_device_detach
+                0x4091ffdc                bsp_disp_device_switch
+                0x40920044                disp_init_connections
+                0x40920160                bsp_disp_init
+                0x409201e8                bsp_disp_vsync_event_enable
+                0x40920200                sync_event_proc
+                0x409202b0                bsp_disp_get_output_type
+                0x409202f8                bsp_disp_set_print_level
+                0x4092030c                bsp_disp_get_print_level
+                0x4092031c                bsp_disp_get_screen_physical_width
+                0x40920324                bsp_disp_get_screen_physical_height
+                0x4092032c                bsp_disp_get_screen_width
+                0x40920334                bsp_disp_get_screen_height
+                0x4092033c                bsp_disp_get_screen_width_from_output_type
+                0x409203dc                bsp_disp_get_screen_height_from_output_type
+                0x4092047c                bsp_disp_set_tv_func
+                0x40920504                bsp_disp_set_hdmi_func
+                0x4092058c                bsp_disp_hdmi_check_support_mode
+                0x409205dc                bsp_disp_hdmi_get_hpd_status
+                0x4092062c                bsp_disp_tv_get_hpd_status
+                0x4092067c                bsp_disp_lcd_get_open_flow
+                0x409206ac                bsp_disp_lcd_get_close_flow
+                0x409206dc                bsp_disp_lcd_set_panel_funs
+                0x4092074c                LCD_OPEN_FUNC
+                0x40920780                LCD_CLOSE_FUNC
+                0x409207b4                bsp_disp_get_lcd_registered
+                0x409207c8                bsp_disp_get_hdmi_registered
+                0x409207d8                bsp_disp_lcd_backlight_enable
+                0x40920808                bsp_disp_lcd_backlight_disable
+                0x40920838                bsp_disp_lcd_pwm_enable
+                0x40920868                bsp_disp_lcd_pwm_disable
+                0x40920898                bsp_disp_lcd_power_enable
+                0x409208d0                bsp_disp_lcd_power_disable
+                0x40920908                bsp_disp_lcd_set_bright
+                0x40920940                bsp_disp_lcd_get_bright
+                0x40920970                bsp_disp_lcd_tcon_enable
+                0x409209a0                bsp_disp_lcd_tcon_disable
+                0x409209d0                bsp_disp_lcd_pin_cfg
+                0x40920a08                bsp_disp_lcd_gpio_set_value
+                0x40920a48                bsp_disp_lcd_gpio_set_direction
+                0x40920a88                bsp_disp_get_panel_info
+                0x40920ad8                bsp_disp_feat_get_num_screens
+                0x40920adc                bsp_disp_feat_get_num_channels
+                0x40920ae0                bsp_disp_feat_get_num_layers
+                0x40920ae4                bsp_disp_feat_get_num_layers_by_chn
+                0x40920ae8                bsp_disp_feat_is_supported_output_types
+                0x40920aec                bsp_disp_feat_is_support_capture
+                0x40920af0                disp_init_feat
+                0x40920af8                disp_device_set_manager
+                0x40920b34                disp_device_unset_manager
+                0x40920b70                disp_device_get_resolution
+                0x40920ba8                disp_device_get_timings
+                0x40920be8                disp_device_is_interlace
+                0x40920c10                disp_device_get
+                0x40920c5c                disp_device_find
+                0x40920c9c                disp_device_register
+                0x40920cc0                disp_device_unregister
+                0x40922438                disp_lcd_is_enabled
+                0x40922470                disp_lcd_get_bright
+                0x409224ec                disp_lcd_set_bright
+                0x40922abc                disp_lcd_gpio_set_value
+                0x40922b2c                disp_lcd_gpio_set_direction
+                0x40922b9c                disp_get_lcd
+                0x40922d10                disp_lcd_gpio_init
+                0x40923094                disp_lcd_gpio_exit
+                0x40923294                disp_lcd_gpio_get_value
+                0x409232fc                disp_init_lcd
+                0x409245cc                disp_get_layer
+                0x40924840                disp_get_layer_1
+                0x40924910                disp_get_layer_manager
+                0x40924954                disp_init_mgr
+                0x40924d7c                disp_delay_ms
+                0x40924d8c                disp_delay_us
+                0x40924d9c                dump_layer_config
+                0x409252d4                disp_get_smbl
+                0x40925318                disp_smbl_shadow_protect
+                0x409255b0                disp_smbl_force_update_regs
+                0x40925608                disp_init_smbl
+                0x40925b44                disp_enhance_set_para
+                0x40925d48                disp_get_enhance
+                0x40925d8c                disp_init_enhance
+                0x40925f58                disp_capture_commit
+                0x4092604c                disp_capture_sync
+                0x40926240                disp_capture_start
+                0x40926314                disp_capture_exit
+                0x40926370                disp_capture_init
+                0x409263f4                disp_capture_unset_manager
+                0x4092644c                disp_capture_set_manager
+                0x409264a8                disp_capture_stop
+                0x40926534                disp_get_capture
+                0x40926584                disp_capture_shadow_protect
+                0x409265d8                disp_capture_apply
+                0x409265e0                disp_capture_force_apply
+                0x409265e8                disp_capture_suspend
+                0x4092661c                disp_capture_resume
+                0x40926650                disp_init_capture
+                0x40926fb0                disp_vdevice_register
+                0x40927174                disp_vdevice_unregister
+                0x409271c8                disp_vdevice_get_source_ops
+                0x409271ec                lcd_init
+                0x4092722c                sunxi_lcd_delay_ms
+                0x40927254                sunxi_lcd_delay_us
+                0x4092727c                sunxi_lcd_tcon_enable
+                0x4092729c                sunxi_lcd_tcon_disable
+                0x409272bc                sunxi_lcd_backlight_enable
+                0x409272dc                sunxi_lcd_backlight_disable
+                0x409272fc                sunxi_lcd_power_enable
+                0x4092731c                sunxi_lcd_power_disable
+                0x4092733c                sunxi_lcd_pwm_enable
+                0x40927364                sunxi_lcd_pwm_disable
+                0x4092738c                sunxi_lcd_cpu_write
+                0x409273b4                sunxi_lcd_cpu_write_index
+                0x409273dc                sunxi_lcd_cpu_write_data
+                0x40927404                sunxi_lcd_dsi_dcs_write
+                0x4092742c                sunxi_lcd_dsi_dcs_write_0para
+                0x40927444                sunxi_lcd_dsi_dcs_write_1para
+                0x40927464                sunxi_lcd_dsi_dcs_write_2para
+                0x40927484                sunxi_lcd_dsi_dcs_write_3para
+                0x409274ac                sunxi_lcd_dsi_dcs_write_4para
+                0x409274dc                sunxi_lcd_dsi_dcs_write_5para
+                0x40927514                sunxi_lcd_dsi_gen_write
+                0x4092753c                sunxi_lcd_dsi_gen_write_0para
+                0x40927554                sunxi_lcd_dsi_gen_write_1para
+                0x40927574                sunxi_lcd_dsi_gen_write_2para
+                0x40927594                sunxi_lcd_dsi_gen_write_3para
+                0x409275bc                sunxi_lcd_dsi_gen_write_4para
+                0x409275ec                sunxi_lcd_dsi_gen_write_5para
+                0x40927624                sunxi_lcd_dsi_clk_enable
+                0x40927650                sunxi_lcd_dsi_clk_disable
+                0x4092767c                sunxi_lcd_set_panel_funs
+                0x409276a4                sunxi_lcd_pin_cfg
+                0x409276cc                sunxi_lcd_gpio_set_value
+                0x409276f4                sunxi_lcd_gpio_set_direction
+                0x40928674                de_fcc_set_reg_base
+                0x40928690                de_fcc_init
+                0x40928730                de_fcc_update_regs
+                0x409287ac                de_fcc_enable
+                0x409287e0                de_fcc_set_size
+                0x40928850                de_fcc_set_window
+                0x40928900                de_fcc_set_para
+                0x40928958                de_fcc_csc_set
+                0x409289e8                de_fcc_info2para
+                0x40928a9c                de_gsu_init
+                0x40928be8                de_gsu_update_regs
+                0x40928cb0                de_gsu_set_reg_base
+                0x40928ccc                de_gsu_enable
+                0x40928d04                de_gsu_set_para
+                0x40928e50                de_gsu_calc_scaler_para
+                0x40928fc0                de_calc_ovl_coord
+                0x40928fe4                de_gsu_sel_ovl_scaler_para
+                0x40929110                de_al_lyr_apply
+                0x4092a0cc                de_al_mgr_apply
+                0x4092a180                de_al_mgr_sync
+                0x4092a184                de_al_mgr_update_regs
+                0x4092a1d0                de_al_query_irq
+                0x4092a1d4                de_al_init
+                0x4092a224                disp_al_layer_apply
+                0x4092a228                disp_al_manager_init
+                0x4092a230                disp_al_manager_exit
+                0x4092a238                disp_al_manager_apply
+                0x4092a23c                disp_al_manager_sync
+                0x4092a240                disp_al_manager_update_regs
+                0x4092a244                disp_al_manager_query_irq
+                0x4092a248                disp_al_enhance_apply
+                0x4092a24c                disp_al_enhance_update_regs
+                0x4092a250                disp_al_enhance_sync
+                0x4092a254                disp_al_capture_init
+                0x4092a25c                disp_al_capture_exit
+                0x4092a264                disp_al_capture_sync
+                0x4092a29c                disp_al_capture_apply
+                0x4092a2b8                disp_al_capture_get_status
+                0x4092a2bc                disp_al_smbl_apply
+                0x4092a2d8                disp_al_smbl_update_regs
+                0x4092a2f4                disp_al_smbl_sync
+                0x4092a310                disp_al_smbl_get_status
+                0x4092a32c                disp_al_lcd_get_clk_info
+                0x4092a3c0                disp_al_vdevice_cfg
+                0x4092a4d8                disp_al_vdevice_enable
+                0x4092a51c                disp_al_vdevice_disable
+                0x4092a538                disp_al_device_get_cur_line
+                0x4092a554                disp_al_device_get_start_delay
+                0x4092a570                disp_al_device_query_irq
+                0x4092a590                disp_al_lcd_cfg
+                0x4092a5f8                disp_al_lcd_enable
+                0x4092a628                disp_al_lcd_disable
+                0x4092a650                disp_al_lcd_query_irq
+                0x4092a668                disp_al_lcd_tri_busy
+                0x4092a67c                disp_al_lcd_tri_start
+                0x4092a680                disp_al_lcd_io_cfg
+                0x4092a688                disp_al_lcd_get_cur_line
+                0x4092a6a4                disp_al_lcd_get_start_delay
+                0x4092a6c0                disp_al_hdmi_enable
+                0x4092a6d0                disp_al_hdmi_disable
+                0x4092a6ec                disp_al_hdmi_cfg
+                0x4092a710                disp_init_al
+                0x4092a764                de_peak_set_reg_base
+                0x4092a780                de_peak_update_regs
+                0x4092a7c4                de_peak_init
+                0x4092a844                de_peak_enable
+                0x4092a878                de_peak_set_size
+                0x4092a8c4                de_peak_set_window
+                0x4092a974                de_peak_set_para
+                0x4092aa08                de_peak_info2para
+                0x4092aa5c                de_rtmx_update_regs
+                0x4092acec                de_rtmx_set_gld_reg_base
+                0x4092ad08                de_rtmx_set_bld_reg_base
+                0x4092ad24                de_rtmx_set_overlay_reg_base
+                0x4092ad74                de_rtmx_init
+                0x4092b0c8                de_rtmx_set_display_size
+                0x4092b12c                de_rtmx_set_dbuff_rdy
+                0x4092b158                de_rtmx_set_enable
+                0x4092b19c                de_rtmx_query_irq
+                0x4092b1bc                de_rtmx_set_lay_cfg
+                0x4092b484                de_rtmx_set_lay_haddr
+                0x4092b5d0                de_rtmx_set_lay_laddr
+                0x4092b844                de_rtmx_get_3d_in_single_size
+                0x4092b8c0                de_rtmx_get_3d_in
+                0x4092bcf4                de_rtmx_get_li_addr_offset
+                0x4092bd04                de_rtmx_get_3d_out
+                0x4092bd78                de_rtmx_set_lay_fcolor
+                0x4092be6c                de_rtmx_set_overlay_size
+                0x4092bf60                de_rtmx_set_coarse_fac
+                0x4092c1c8                de_rtmx_set_pf_en
+                0x4092c23c                de_rtmx_set_pipe_cfg
+                0x4092c2e4                de_rtmx_set_route
+                0x4092c328                de_rtmx_set_premul
+                0x4092c364                de_rtmx_set_background_color
+                0x4092c394                de_rtmx_set_blend_size
+                0x4092c3f8                de_rtmx_set_blend_mode
+                0x4092c4e8                de_rtmx_set_outitl
+                0x4092c520                de_rtmx_set_colorkey
+                0x4092c594                de_rtmx_extend_rect
+                0x4092c648                de_rtmx_calc_chnrect
+                0x4092c838                de_rtmx_trimcoord
+                0x4092c99c                de_rtmx_get_premul_ctl
+                0x4092ca54                de_vsu_update_regs
+                0x4092cc60                de_vsu_init
+                0x4092cef4                de_vsu_set_reg_base
+                0x4092cf10                de_vsu_enable
+                0x4092cf44                de_vsu_set_para
+                0x4092d21c                de_vsu_calc_scaler_para
+                0x4092d580                de_vsu_sel_ovl_scaler_para
+                0x4092d740                de_vsu_recalc_scale_para
+                0x4092d7b8                de_feat_get_num_devices
+                0x4092d7c0                de_feat_get_num_chns
+                0x4092d7c8                de_feat_get_num_vi_chns
+                0x4092d7d0                de_feat_get_num_ui_chns
+                0x4092d7d8                de_feat_get_num_layers
+                0x4092d7e8                de_feat_get_num_layers_by_chn
+                0x4092d80c                de_feat_is_support_vep
+                0x4092d814                de_feat_is_support_vep_by_chn
+                0x4092d83c                de_feat_is_support_smbl
+                0x4092d844                de_feat_is_supported_output_types
+                0x4092d84c                de_feat_is_support_wb
+                0x4092d854                de_feat_is_support_scale
+                0x4092d864                de_feat_is_support_scale_by_chn
+                0x4092d88c                de_feat_init
+                0x4092e030                hmdi_src_sel
+                0x4092e050                dsi_src_sel
+                0x4092e070                lvds_open
+                0x4092e244                lvds_close
+                0x4092e2e4                tcon_get_timing
+                0x4092e3e4                tcon_set_reg_base
+                0x4092e3fc                tcon_get_reg_base
+                0x4092e40c                tcon_init
+                0x4092e458                tcon_exit
+                0x4092e478                tcon_irq_enable
+                0x4092e4a0                tcon_irq_disable
+                0x4092e4c4                tcon_irq_query
+                0x4092e4fc                tcon_get_start_delay
+                0x4092e538                tcon_get_cur_line
+                0x4092e578                tcon0_src_select
+                0x4092e598                tcon0_src_get
+                0x4092e5b0                tcon0_open
+                0x4092e63c                tcon0_close
+                0x4092e698                tcon0_tri_busy
+                0x4092e6b0                tcon0_tri_start
+                0x4092e6dc                tcon0_frm
+                0x4092e7f4                tcon0_cpu_16b_to_24b
+                0x4092e81c                tcon0_cpu_24b_to_16b
+                0x4092e840                tcon0_cpu_busy
+                0x4092e864                tcon0_cpu_wr_24b_index
+                0x4092e8c4                tcon0_cpu_wr_24b_data
+                0x4092e924                tcon0_cpu_wr_24b
+                0x4092e948                tcon0_cpu_rd_24b
+                0x4092e950                tcon0_cpu_wr_16b
+                0x4092e988                tcon0_cpu_wr_16b_index
+                0x4092e9ac                tcon0_cpu_wr_16b_data
+                0x4092e9d0                tcon0_cpu_rd_16b
+                0x4092e9d8                tcon0_set_dclk_div
+                0x4092e9f8                tcon0_get_dclk_div
+                0x4092ea10                tcon1_open
+                0x4092ea3c                tcon1_close
+                0x4092ea68                tcon1_cfg
+                0x4092ec8c                tcon1_cfg_ex
+                0x4092ed30                tcon1_set_timming
+                0x4092ee6c                tcon1_set_tv_mode
+                0x4092ee74                tcon1_src_select
+                0x4092ee9c                tcon1_src_get
+                0x4092eeb4                tcon_ceu
+                0x4092f2d4                tcon_gamma
+                0x4092f330                tcon_cmap
+                0x4092f480                tcon0_cfg_ext
+                0x4092f4b4                tcon0_cfg
+                0x4092f874                de_lti_set_reg_base
+                0x4092f890                de_lti_update_regs
+                0x4092f8d4                de_lti_init
+                0x4092f950                de_lti_enable
+                0x4092f984                de_lti_set_size
+                0x4092f9d0                de_lti_set_window
+                0x4092fa80                de_lti_set_para
+                0x4092fb4c                de_lti_info2para
+                0x4092fba0                de_fce_set_reg_base
+                0x4092fbbc                de_fce_update_regs
+                0x4092fc00                de_fce_init
+                0x4092fd98                de_fce_enable
+                0x4092fdcc                de_fce_set_size
+                0x4092fe18                de_fce_set_window
+                0x4092fec8                de_fce_csc_en
+                0x4092fefc                de_fce_set_para
+                0x4092ff88                de_fce_get_hist
+                0x4092ffcc                de_fce_set_ce
+                0x40930010                de_fce_info2para
+                0x409300d0                auto_ce_model
+                0x409301f4                de_hist_apply
+                0x409302b0                de_hist_sync
+                0x40930344                de_ce_apply
+                0x409303b8                de_ce_sync
+                0x40930478                de_ase_set_reg_base
+                0x40930494                de_ase_update_regs
+                0x409304d8                de_ase_init
+                0x40930554                de_ase_enable
+                0x40930588                de_ase_set_size
+                0x409305d4                de_ase_set_window
+                0x40930684                de_ase_set_para
+                0x409306bc                de_ase_info2para
+                0x40930708                de_bws_set_reg_base
+                0x40930724                de_bws_update_regs
+                0x40930768                de_bws_init
+                0x40930824                de_bws_enable
+                0x40930858                de_bws_set_size
+                0x409308a4                de_bws_set_window
+                0x40930954                de_bws_set_para
+                0x409309ac                de_bws_info2para
+                0x40930a00                de_bws_apply
+                0x40930a88                de_bws_sync
+                0x40930e24                de_enhance_info2data
+                0x40930fa8                de_enhance_apply
+                0x40931288                de_enhance_sync
+                0x409312f8                de_enhance_update_regs
+                0x40931380                de_enhance_init
+                0x40931484                de_smbl_update_regs
+                0x40931518                de_smbl_set_reg_base
+                0x40931530                de_smbl_init
+                0x409316f0                de_smbl_enable
+                0x40931720                de_smbl_set_window
+                0x409317cc                de_smbl_set_para
+                0x409318a8                de_smbl_apply
+                0x40931974                de_smbl_set_lut
+                0x409319ac                de_smbl_get_hist
+                0x409319d4                de_smbl_sync
+                0x40931c34                de_smbl_get_status
+                0x40931c4c                de_ccsc_update_regs
+                0x40931cec                de_ccsc_init
+                0x40931f00                IntRightShift
+                0x40931f30                IntRightShift64
+                0x40931fa0                de_csc_coeff_calc
+                0x409330ec                de_ccsc_apply
+                0x4093326c                de_dcsc_apply
+                0x409333e0                de_dcsc_update_regs
+                0x4093347c                de_dcsc_init
+                0x409335d0                WB_EBIOS_Set_Reg_Base
+                0x409335e8                WB_EBIOS_Get_Reg_Base
+                0x409335f8                WB_EBIOS_Init
+                0x40933614                WB_EBIOS_Writeback_Enable
+                0x40933638                WB_EBIOS_Apply
+                0x40933654                WB_EBIOS_Set_Para
+                0x40933c28                WB_EBIOS_Update_Regs
+                0x40933c40                WB_EBIOS_Get_Status
+                0x40933c84                WB_EBIOS_EnableINT
+                0x40933ca4                WB_EBIOS_DisableINT
+                0x40933cc4                WB_EBIOS_QueryINT
+                0x40933cd8                WB_EBIOS_ClearINT
+                0x40933f00                de_clk_enable
+                0x40933f08                de_clk_disable
+                0x40933f10                de_clk_set_reg_base
+ .text          0x40933f24     0x36ac fs/aw_fs/libawfat.o
+                0x40934880                get_fattime
+                0x40934888                clust2sect
+                0x409348ac                get_fat
+                0x40934ad0                aw_get_fat
+                0x40934bf4                put_fat
+                0x409354cc                aw_put_fat
+                0x40935768                f_mount
+                0x409357e8                f_mount_ex
+                0x4093584c                f_open
+                0x40935a44                f_read
+                0x40935d74                f_write
+                0x409360cc                f_sync
+                0x409361bc                f_close
+                0x40936388                f_tell
+                0x409363a8                f_eof
+                0x409363f8                f_lseek
+                0x40936628                f_opendir
+                0x409366d8                f_readdir
+                0x40936764                f_stat
+                0x409367d4                f_getfree
+                0x40936934                f_truncate
+                0x40936a30                f_unlink
+                0x40936b80                f_mkdir
+                0x40936d6c                f_chmod
+                0x40936df8                f_utime
+                0x40936e90                f_rename
+                0x40937050                f_gets
+                0x409370c8                f_putc
+                0x4093710c                f_puts
+                0x40937150                f_printf
+                0x409374c4                disk_initialize
+                0x409374cc                disk_status
+                0x409374d4                disk_read_fs
+                0x4093754c                disk_write
+                0x409375c8                disk_ioctl
+ .text          0x409375d0     0x2870 fs/fat/libfat.o
+                0x40937604                downcase
+                0x40937628                disk_read
+                0x4093767c                fat_register_device
+                0x4093778c                get_name
+                0x40937850                get_fatent
+                0x4093797c                get_cluster
+                0x40937a10                get_contents
+                0x40937b8c                slot2str
+                0x40937c58                get_vfatname
+                0x40937e14                mkcksum
+                0x40937e44                read_bootsectandvi
+                0x40937f34                do_fat_read
+                0x409387e4                file_fat_detectfs
+                0x4093893c                file_fat_ls
+                0x4093894c                file_fat_read
+                0x40939aac                file_fat_write
+                0x40939ae0                file_getfsname
+                0x40939af8                file_cd
+                0x40939cec                file_detectfs
+                0x40939d28                file_ls
+                0x40939dac                file_read
+ .text          0x40939e40     0x2b48 lib/libgeneric.o
+                0x40939e40                crc7
+                0x40939e70                cyg_crc16
+                0x40939eb4                crc32_no_comp
+                0x40939f94                crc32
+                0x40939fa8                crc32_wd
+                0x40939fac                display_options
+                0x40939fcc                print_size
+                0x4093a100                print_buffer
+                0x4093a24c                zfree
+                0x4093a254                zalloc
+                0x4093a264                zunzip
+                0x4093a36c                gunzip
+                0x4093a42c                hcreate_r
+                0x4093a4cc                hdestroy_r
+                0x4093a540                hstrstr_r
+                0x4093a5ec                hmatch_r
+                0x4093a68c                hsearch_r
+                0x4093a978                hdelete_r
+                0x4093aa00                hexport_r
+                0x4093ac1c                himport_r
+                0x4093b024                lmb_dump_all
+                0x4093b028                lmb_init
+                0x4093b050                lmb_add
+                0x4093b054                lmb_free
+                0x4093b178                lmb_reserve
+                0x4093b180                lmb_overlaps_region
+                0x4093b1dc                __lmb_alloc_base
+                0x4093b30c                lmb_alloc_base
+                0x4093b340                lmb_alloc
+                0x4093b348                lmb_is_reserved
+                0x4093b3a8                board_lmb_reserve
+                0x4093b3a8                __board_lmb_reserve
+                0x4093b3ac                __arch_lmb_reserve
+                0x4093b3b0                ldiv
+                0x4093b3d8                string_to_ip
+                0x4093b434                qsort
+                0x4093b500                strcmp_compar
+                0x4093b50c                strmhz
+                0x4093b568                __div64_32
+                0x4093b638                strcpy
+                0x4093b650                strncpy
+                0x4093b674                strcat
+                0x4093b6a0                strncat
+                0x4093b6f4                strcmp
+                0x4093b71c                strncmp
+                0x4093b760                strcasecmp
+                0x4093b7bc                strncasecmp
+                0x4093b820                strchr
+                0x4093b854                strlen
+                0x4093b874                strrchr
+                0x4093b8b0                strnlen
+                0x4093b8dc                strdup
+                0x4093b910                strspn
+                0x4093b950                strpbrk
+                0x4093b98c                strtok
+                0x4093ba04                strsep
+                0x4093ba38                strswab
+                0x4093ba84                memset
+                0x4093baf4                bcopy
+                0x4093bb1c                memcpy
+                0x4093bb88                memmove
+                0x4093bbf4                memcmp
+                0x4093bc28                memscan
+                0x4093bc54                strstr
+                0x4093bcb4                memchr
+                0x4093bce4                udelay
+                0x4093c200                simple_strtoul
+                0x4093c2ac                strict_strtoul
+                0x4093c324                simple_strtol
+                0x4093c34c                ustrtoul
+                0x4093c3c0                simple_strtoull
+                0x4093c4c0                vsprintf
+                0x4093c90c                sprintf
+                0x4093c930                panic
+                0x4093c974                __assert_fail
+ .text          0x4093c988     0x269c lib/zlib/libz.o
+                0x4093c988                zcfree
+                0x4093c990                zcalloc
+                0x4093c998                inflate_fast
+                0x4093cf44                inflate_table
+                0x4093d508                inflateReset
+                0x4093d588                inflateInit2_
+                0x4093d68c                inflateInit_
+                0x4093d6a0                inflateEnd
+                0x4093d70c                adler32
+                0x4093d9c8                inflate
+ .text          0x4093f024      0xbc0 memtest/libsunxi_memtest.o
+                0x4093f024                compare_regions
+                0x4093f0a8                test_stuck_address
+                0x4093f1cc                test_random_value
+                0x4093f28c                test_xor_comparison
+                0x4093f2f4                test_sub_comparison
+                0x4093f35c                test_mul_comparison
+                0x4093f3c4                test_div_comparison
+                0x4093f434                test_or_comparison
+                0x4093f49c                test_and_comparison
+                0x4093f504                test_seqinc_comparison
+                0x4093f560                test_solidbits_comparison
+                0x4093f634                test_checkerboard_comparison
+                0x4093f714                test_blockseq_comparison
+                0x4093f7dc                test_walkbits0_comparison
+                0x4093f8c0                test_walkbits1_comparison
+                0x4093f9a4                test_bitspread_comparison
+                0x4093fae4                test_bitflip_comparison
+ .text          0x4093fbe4     0x48fc sprite/libsprite.o
+                0x4093fbe4                initqueue
+                0x4093fc94                destroyqueue
+                0x4093fcc4                resetqueue
+                0x4093fd18                enqueue
+                0x4093fd1c                outqueue
+                0x4093fd20                isqueueempty
+                0x4093fd38                isqueuefull
+                0x4093fd60                inqueue_query
+                0x4093fd88                inqueue_ex
+                0x4093fdb4                outqueue_query
+                0x4093fdcc                outqueue_ex
+                0x4093fe00                sunxi_queue_init
+                0x4093fe48                sunxi_queue_destroy
+                0x4093fe58                sunxi_queue_reset
+                0x4093fe68                sunxi_queue_isempty
+                0x4093fe78                sunxi_queue_isfull
+                0x4093fe88                sunxi_inqueue_query
+                0x4093fe9c                sunxi_queue_in
+                0x4093feac                sunxi_outqueue_query
+                0x4093fec8                sunxi_queue_out
+                0x40940480                sprite_card_firmware_start
+                0x40940488                sprite_card_firmware_probe
+                0x409404ac                sprite_card_fetch_download_map
+                0x40940530                sprite_card_fetch_mbr
+                0x409405b4                sunxi_sprite_deal_part
+                0x40940b58                sunxi_sprite_deal_uboot
+                0x40940c2c                sunxi_sprite_deal_boot0
+                0x40940cf8                card_download_uboot
+                0x40940d1c                card_download_boot0
+                0x40940d40                card_download_standard_mbr
+                0x40940f10                card_erase
+                0x40941088                sunxi_card_fill_boot0_magic
+                0x4094121c                sunxi_sprite_deal_part_from_sysrevoery
+                0x40941394                __imagehd
+                0x409413b0                sunxi_sprite_deal_fullimg
+                0x40941734                get_code_key
+                0x40941778                init_code
+                0x409417e8                encode
+                0x40941800                decode
+                0x4094182c                exit_code
+                0x40941834                TFInitial
+                0x409418ac                TFDecode
+                0x409418fc                TFUnInitial
+                0x40941924                qp
+                0x4094199c                gen_qtab
+                0x409419e0                gen_mtab
+                0x40941ab0                h_fun
+                0x40941c10                gen_mk_tab
+                0x40941f84                mds_rem
+                0x40941fdc                twofish_new_set_key
+                0x40942108                twofish_new_decrypt
+                0x409422f4                unsparse_probe
+                0x40942380                unsparse_direct_write
+                0x4094261c                unsparse_checksum
+                0x4094262c                sunxi_sprite_download_mbr
+                0x409426e0                sunxi_sprite_download_uboot
+                0x40942820                sunxi_sprite_download_boot0
+                0x40942828                add_sum
+                0x40942898                sunxi_sprite_part_rawdata_verify
+                0x40942994                sunxi_sprite_part_sparsedata_verify
+                0x40942998                sunxi_sprite_generate_checksum
+                0x40942a1c                sunxi_sprite_verify_checksum
+                0x40942aac                sunxi_sprite_verify_mbr
+                0x40942c3c                sunxi_sprite_verify_dlmap
+                0x40942c7c                Img_Open
+                0x40942d84                Img_GetSize
+                0x40942dc0                Img_OpenItem
+                0x40942e84                Img_GetItemSize
+                0x40942ec8                Img_GetItemStart
+                0x40942f44                Img_ReadItem
+                0x40943020                Img_CloseItem
+                0x4094304c                Img_Close
+                0x409430a8                sunxi_sprite_store_part_data
+                0x4094325c                sunxi_sprite_restore_part_data
+                0x409433cc                sunxi_sprite_probe_prvt
+                0x40943438                sunxi_sprite_erase_private_key
+                0x40943554                sunxi_card_sprite_main
+                0x40943c54                sunxi_sprite_erase_flash
+                0x40943e90                sunxi_sprite_force_erase_key
+                0x40943f30                Img_Open_from_sysrecovery
+                0x40944034                card_part_info
+                0x4094413c                sprite_form_sysrecovery
+                0x40944350                sprite_led_init
+                0x40944450                sprite_led_exit
+ .text          0x409444e0     0x6994 usb_sunxi/libsunxi_usb.o
+                0x40948258                sunxi_usb_dev_register
+                0x409482d0                buf_queue_init
+                0x40948428                buf_queue_exit
+                0x409484a0                buf_queue_empty
+                0x409484b8                buf_queue_full
+                0x409484e0                buf_queue_free_size
+                0x40948500                buf_queue_get_page_size
+                0x40948510                buf_enqueue
+                0x4094858c                buf_dequeue
+                0x409485f4                efex_queue_init
+                0x4094866c                efex_queue_exit
+                0x40948690                efex_queue_write_one_page
+                0x409486e4                efex_queue_write_all_page
+                0x4094874c                efex_save_buff_to_queue
+                0x40948e08                sunxi_probe_axp_each_volt
+                0x40948f80                replace_boot_logo
+                0x409491bc                read_file
+                0x40949fe0                sunxi_usb_irq
+                0x4094a71c                sunxi_usb_init
+                0x4094a9c0                sunxi_usb_exit
+                0x4094aa58                sunxi_udc_ep_reset
+                0x4094aa5c                sunxi_udc_start_recv_by_dma
+                0x4094aad8                sunxi_udc_send_setup
+                0x4094ab20                sunxi_udc_set_configuration
+                0x4094ab28                sunxi_udc_set_address
+                0x4094ab70                sunxi_udc_send_data
+                0x4094ac08                sunxi_udc_get_ep_max
+                0x4094ac18                sunxi_udc_get_ep_in_type
+                0x4094ac20                sunxi_udc_get_ep_out_type
+                0x4094ac28                sunxi_usb_main_loop
+                0x4094aca4                sunxi_usb_extern_loop
+                0x4094ad0c                usb_dma_init
+                0x4094ad20                usb_dma_request
+                0x4094ad5c                usb_dma_release
+                0x4094ad7c                usb_dma_setting
+                0x4094adb8                usb_dma_set_pktlen
+                0x4094adec                usb_dma_start
+                0x4094ae28                usb_dma_stop
+                0x4094ae54                usb_dma_int_query
+                0x4094ae64                usb_dma_int_clear
+ .text          0x4094ae74      0x3b0 board/sunxi/sun8iw8/libsun8iw8.o
+                0x4094ae74                board_init
+                0x4094ae98                dram_init_banksize
+                0x4094af00                dram_init
+                0x4094b1e4                board_mmc_init
+                0x4094b1f8                board_mmc_pre_init
+                0x4094b20c                board_mmc_get_num
+                0x4094b214                board_mmc_set_num
+                0x4094b21c                cpu0_set_detected_paras
+ .text          0x4094b224     0x6978 board/sunxi/libsunxi.o
+                0x4094b3ec                __mmc_exit
+                0x4094b3f4                sunxi_board_close_source
+                0x4094b424                sunxi_board_restart
+                0x4094b46c                sunxi_board_shutdown
+                0x4094b4c4                sunxi_board_run_fel
+                0x4094b520                sunxi_board_run_fel_eraly
+                0x4094b574                sunxi_update_subsequent_processing
+                0x4094b600                fastboot_partition_init
+                0x4094b67c                check_android_misc
+                0x4094b898                board_late_init
+                0x4094b8ac                check_uart_input
+                0x4094b938                check_update_key
+                0x4094bcb8                gpio_control
+                0x4094bd18                gpio_control_flashing
+                0x4094be78                write_usb_recovery_to_misc
+                0x4094bf14                check_boot_recovery_key
+                0x4094c058                modify_uboot_uart
+                0x4094c060                modify_system_uart
+                0x4094c068                change_to_debug_mode
+                0x4094c06c                sunxi_flash_read_bootlogo
+                0x4094c0cc                sunxi_read_bootlogo
+                0x4094c240                power_limit_detect_enter
+                0x4094c298                power_limit_detect_exit
+                0x4094c2bc                __usb_probe_vbus_type
+                0x4094c2c4                power_limit_init
+                0x4094c38c                board_display_layer_request
+                0x4094c398                board_display_layer_release
+                0x4094c3a0                board_display_wait_lcd_open
+                0x4094c404                board_display_wait_lcd_close
+                0x4094c468                board_display_set_exit_mode
+                0x4094c4c4                board_display_layer_open
+                0x4094c524                board_display_layer_close
+                0x4094c588                board_display_layer_para_set
+                0x4094c5d8                board_display_show_until_lcd_open
+                0x4094c5f8                board_display_show
+                0x4094c60c                card_board_display_framebuffer_set
+                0x4094c798                board_display_framebuffer_set
+                0x4094c95c                board_display_set_alpha_mode
+                0x4094c974                board_display_framebuffer_change
+                0x4094c97c                board_display_device_open
+                0x4094cc3c                board_display_setenv
+                0x4094cc5c                borad_display_get_screen_width
+                0x4094cc98                borad_display_get_screen_height
+                0x4094cdc0                usb_detect_enter
+                0x4094cf24                usb_detect_exit
+                0x4094cf60                usb_detect_for_charge
+                0x4094cf7c                board_status_probe
+                0x4094d4cc                sprite_cartoon_screen_set
+                0x4094d57c                sprite_cartoon_test
+                0x4094d718                do_sunxi_screen_char
+                0x4094d71c                sprite_cartoon_create
+                0x4094d820                sprite_cartoon_upgrade
+                0x4094d850                sprite_cartoon_destroy
+                0x4094d86c                sprite_cartoon_progressbar_create
+                0x4094d91c                sprite_cartoon_progressbar_config
+                0x4094d964                sprite_cartoon_progressbar_active
+                0x4094d9c8                sprite_cartoon_progressbar_destroy
+                0x4094da0c                sprite_cartoon_progressbar_upgrate
+                0x4094dac8                sprite_cartoon_ui_draw_hollowrectangle
+                0x4094db9c                sprite_cartoon_ui_draw_solidrectangle
+                0x4094dc48                sprite_cartoon_ui_draw_line
+                0x4094def4                sprite_cartoon_ui_draw_lineto
+                0x4094df2c                sprite_cartoon_ui_draw_point
+                0x4094df5c                sprite_cartoon_ui_set_color
+                0x4094df70                sprite_cartoon_ui_get_color
+                0x4094df80                sprite_cartoon_ui_moveto
+                0x4094df98                sprite_cartoon_ui_clear
+                0x4094dfbc                battery_charge_cartoon_init
+                0x4094e154                battery_charge_cartoon_exit
+                0x4094e1a4                battery_charge_cartoon_rate
+                0x4094e218                battery_charge_cartoon_reset
+                0x4094e23c                battery_charge_cartoon_degrade
+                0x4094e2e8                sprite_uichar_init
+                0x4094e40c                sprite_uichar_printf
+                0x4094e594                open_font
+                0x4094e668                close_font
+                0x4094e6b0                check_change_line
+                0x4094e708                draw_bmp_ulc
+                0x4094e7d4                draw_cursor
+                0x4094e97c                SFTE_New_Face
+                0x4094eb90                SFTE_Done_Face
+                0x4094ebd0                SFTE_Set_Pixel_Sizes
+                0x4094ed50                SFTE_Get_Pixel_Sizes
+                0x4094ed88                SFTE_Get_Pixel_Size_List
+                0x4094edf0                SFTE_Get_Pixel_Size_Count
+                0x4094ee08                SFTE_Get_Glyph
+                0x4094efd4                SFTE_Get_XAdvance
+                0x4094f064                sunxi_partition_get_total_num
+                0x4094f07c                sunxi_partition_get_name
+                0x4094f0c4                sunxi_partition_get_offset
+                0x4094f0f4                sunxi_partition_get_size
+                0x4094f124                sunxi_partition_get_offset_byname
+                0x4094f190                sunxi_partition_get_size_byname
+                0x4094f1fc                sunxi_partition_get_info_byname
+                0x4094f284                sunxi_partition_fetch_mbr
+                0x4094f2a0                sunxi_partition_refresh
+                0x4094f2e8                sunxi_partition_init
+                0x4094f8b0                sw_cfg_get_int
+                0x4094f8e0                sw_cfg_get_str
+                0x4094f92c                script_parser_init
+                0x4094f94c                save_config
+                0x4094f9ac                reload_config
+                0x4094f9e4                script_get_length
+                0x4094f9f0                script_parser_exit
+                0x4094fa00                script_parser_subkey
+                0x4094faa8                script_parser_fetch_subkey_start
+                0x4094fb58                script_parser_fetch_subkey_next
+                0x4094fc10                script_parser_fetch
+                0x4094fe20                script_parser_fetch_ex
+                0x4095005c                script_parser_patch_all
+                0x40950134                script_parser_patch
+                0x40950348                script_parser_subkey_count
+                0x409503ec                script_parser_mainkey_count
+                0x40950400                script_parser_mainkey_get_gpio_count
+                0x409504e4                script_parser_mainkey_get_gpio_cfg
+                0x40950638                sw_gpio_init
+                0x40950644                gpio_exit
+                0x4095064c                gpio_request
+                0x40950b50                gpio_request_ex
+                0x40950bf0                gpio_request_simple
+                0x40950c9c                gpio_release
+                0x40950f28                gpio_get_all_pin_status
+                0x40951270                gpio_get_one_pin_status
+                0x40951464                gpio_set_one_pin_status
+                0x40951658                gpio_set_one_pin_io_status
+                0x40951730                gpio_set_one_pin_pull
+                0x40951808                gpio_set_one_pin_driver_level
+                0x409518e0                gpio_read_one_pin_value
+                0x409519e0                gpio_write_one_pin_value
+                0x40951b00                upper
+                0x40951b20                lower
+                0x40951b40                sunxi_dump
+ .text          0x40951b9c       0x20 /home/welcome/Documents/v3s/qt/u-boot-2011.09/arch/arm/lib/eabi_compat.o
+                0x40951b9c                raise
+                0x40951bb8                __aeabi_unwind_cpp_pr0
+ .text          0x40951bbc       0x18 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_lshrdi3.o)
+                0x40951bbc                __aeabi_llsr
+                0x40951bbc                __lshrdi3
+ .text          0x40951bd4       0x1c /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashrdi3.o)
+                0x40951bd4                __ashrdi3
+                0x40951bd4                __aeabi_lasr
+ .text          0x40951bf0       0x18 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashldi3.o)
+                0x40951bf0                __ashldi3
+                0x40951bf0                __aeabi_llsl
+ .text          0x40951c08      0x370 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_addsubdf3.o)
+                0x40951c08                __aeabi_drsub
+                0x40951c10                __aeabi_dsub
+                0x40951c10                __subdf3
+                0x40951c14                __adddf3
+                0x40951c14                __aeabi_dadd
+                0x40951e8c                __aeabi_ui2d
+                0x40951e8c                __floatunsidf
+                0x40951eac                __floatsidf
+                0x40951eac                __aeabi_i2d
+                0x40951ed0                __extendsfdf2
+                0x40951ed0                __aeabi_f2d
+                0x40951f0c                __aeabi_ul2d
+                0x40951f0c                __floatundidf
+                0x40951f1c                __floatdidf
+                0x40951f1c                __aeabi_l2d
+ .text          0x40951f78      0x424 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_muldivdf3.o)
+                0x40951f78                __aeabi_dmul
+                0x40951f78                __muldf3
+                0x409521cc                __aeabi_ddiv
+                0x409521cc                __divdf3
+ .text          0x4095239c       0x50 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_fixdfsi.o)
+                0x4095239c                __fixdfsi
+                0x4095239c                __aeabi_d2iz
+ .text          0x409523ec       0xa0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_truncdfsf2.o)
+                0x409523ec                __aeabi_d2f
+                0x409523ec                __truncdfsf2
+ .text          0x4095248c      0x21c /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_addsubsf3.o)
+                0x4095248c                __aeabi_frsub
+                0x40952494                __subsf3
+                0x40952494                __aeabi_fsub
+                0x40952498                __aeabi_fadd
+                0x40952498                __addsf3
+                0x409525f8                __aeabi_ui2f
+                0x409525f8                __floatunsisf
+                0x40952600                __aeabi_i2f
+                0x40952600                __floatsisf
+                0x4095261c                __floatundisf
+                0x4095261c                __aeabi_ul2f
+                0x4095262c                __floatdisf
+                0x4095262c                __aeabi_l2f
+ .text          0x409526a8      0x2a0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_muldivsf3.o)
+                0x409526a8                __mulsf3
+                0x409526a8                __aeabi_fmul
+                0x40952810                __divsf3
+                0x40952810                __aeabi_fdiv
+ .text          0x40952948       0x4c /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_fixsfsi.o)
+                0x40952948                __fixsfsi
+                0x40952948                __aeabi_f2iz
+
+.glue_7         0x40952994        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x40952994        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x40952994        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x40952994        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x40952994        0x0
+ .iplt          0x00000000        0x0 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+                0x409529a0                . = ALIGN (0x10)
+
+.rodata         0x409529a0    0x13280
+ *(EXCLUDE_FILE(board/sunxi/sun8iw8/standby/libstandby.o) .rodata*)
+ .rodata        0x409529a0       0x16 arch/arm/cpu/armv7/libarmv7.o
+ .rodata.str1.1
+                0x409529b6       0x65 arch/arm/cpu/armv7/libarmv7.o
+ .rodata        0x40952a1b        0xc arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+ .rodata.str1.1
+                0x40952a27      0x802 arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+                                0x810 (size before relaxing)
+ *fill*         0x40953229        0x3 00
+ .rodata        0x4095322c       0x80 arch/arm/lib/libarm.o
+ .rodata.str1.1
+                0x409532ac      0x3e5 arch/arm/lib/libarm.o
+                                0x409 (size before relaxing)
+ *fill*         0x40953691        0x3 00
+ .rodata        0x40953694      0x8e4 common/libcommon.o
+                0x4095371c                version_string
+                0x40953789                default_environment
+                0x40953c5e                sunxi_sprite_environment
+ .rodata.str1.1
+                0x40953f78     0x4138 common/libcommon.o
+                               0x4560 (size before relaxing)
+ .rodata        0x409580b0       0x18 disk/libdisk.o
+ .rodata.str1.1
+                0x409580c8      0x2ba disk/libdisk.o
+                                0x2e7 (size before relaxing)
+ .rodata.str1.1
+                0x40958382       0x5a drivers/dma/libdma.o
+ .rodata.str1.1
+                0x409583dc       0x16 drivers/i2c/libi2c.o
+ *fill*         0x409583f2        0x2 00
+ .rodata        0x409583f4     0x286c drivers/mmc/libmmc.o
+ .rodata.str1.1
+                0x4095ac60     0x18b0 drivers/mmc/libmmc.o
+                               0x18dd (size before relaxing)
+ .rodata.str1.1
+                0x4095c510      0x62b drivers/power/libpower.o
+                                0x67b (size before relaxing)
+ *fill*         0x4095cb3b        0x1 00
+ .rodata        0x4095cb3c       0x58 drivers/pwm/libsunxi_pwm.o
+ .rodata.str1.1
+                0x4095cb94       0x25 drivers/pwm/libsunxi_pwm.o
+                                 0x2e (size before relaxing)
+ *fill*         0x4095cbb9        0x3 00
+ .rodata        0x4095cbbc       0x10 drivers/serial/libserial.o
+ .rodata.str1.1
+                0x4095cbcc       0xfe drivers/spi/libspi.o
+                                0x11b (size before relaxing)
+ .rodata.str1.1
+                0x4095ccca      0x553 drivers/spinor/libspinor.o
+                                0x57c (size before relaxing)
+ *fill*         0x4095d21d        0x3 00
+ .rodata        0x4095d220      0x280 drivers/srclib/libjpeddec.o
+ .rodata.str1.1
+                0x4095d4a0      0x2ed drivers/srclib/libjpeddec.o
+                                0x2f1 (size before relaxing)
+ .rodata.str1.1
+                0x4095d78d      0x160 drivers/storage_type/libstorage_type.o
+                                0x17b (size before relaxing)
+ *fill*         0x4095d8ed        0x3 00
+ .rodata        0x4095d8f0      0x540 drivers/video_sunxi/libvideo_sunxi.o
+ .rodata.str1.1
+                0x4095de30     0x102c drivers/video_sunxi/libvideo_sunxi.o
+                               0x1222 (size before relaxing)
+ .rodata        0x4095ee5c       0x24 fs/aw_fs/libawfat.o
+ .rodata.str1.1
+                0x4095ee80      0x18a fs/aw_fs/libawfat.o
+                                0x192 (size before relaxing)
+ *fill*         0x4095f00a        0x2 00
+ .rodata        0x4095f00c       0x18 fs/fat/libfat.o
+ .rodata.str1.1
+                0x4095f024      0x2b9 fs/fat/libfat.o
+                                0x2f9 (size before relaxing)
+ *fill*         0x4095f2dd        0x3 00
+ .rodata        0x4095f2e0      0x827 lib/libgeneric.o
+                0x4095f2e0                crc7_syndrome_table
+                0x4095f9e6                _ctype
+                0x4095faf6                hex_asc
+ .rodata.str1.1
+                0x4095fb07      0x149 lib/libgeneric.o
+                                0x15f (size before relaxing)
+ .rodata        0x4095fc50      0x9cc lib/zlib/libz.o
+                0x409605f4                z_errmsg
+ .rodata.str1.1
+                0x4096061c      0x21c lib/zlib/libz.o
+                                0x21d (size before relaxing)
+ .rodata.str1.1
+                0x40960838      0x121 memtest/libsunxi_memtest.o
+                                0x134 (size before relaxing)
+ .rodata.str1.1
+                0x40960959     0x223a sprite/libsprite.o
+                               0x2508 (size before relaxing)
+ .rodata        0x40962b93       0x78 usb_sunxi/libsunxi_usb.o
+                0x40962b93                RequestSense
+                0x40962ba7                InquiryData
+                0x40962bcf                pburn_RequestSense
+                0x40962be3                pburn_InquiryData
+ .rodata.str1.1
+                0x40962c0b     0x1c0f usb_sunxi/libsunxi_usb.o
+                               0x2651 (size before relaxing)
+ .rodata.str1.1
+                0x4096481a       0xfb board/sunxi/sun8iw8/libsun8iw8.o
+ *fill*         0x40964915        0x3 00
+ .rodata        0x40964918       0x47 board/sunxi/libsunxi.o
+ .rodata.str1.1
+                0x4096495f     0x12a6 board/sunxi/libsunxi.o
+                               0x141b (size before relaxing)
+ .rodata.str1.1
+                0x40965c05       0x1b /home/welcome/Documents/v3s/qt/u-boot-2011.09/arch/arm/lib/eabi_compat.o
+
+.hash           0x40965c20       0x58
+ .hash          0x40965c20       0x58 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+
+.ARM.extab      0x40965c78        0x0
+ .ARM.extab     0x40965c78        0x0 drivers/srclib/libjpeddec.o
+
+.ARM.exidx      0x40965c78       0x10
+ .ARM.exidx     0x40965c78       0x10 drivers/srclib/libjpeddec.o
+                0x40965c90                . = ALIGN (0x10)
+
+.data           0x40965c90     0x6958
+ *(EXCLUDE_FILE(board/sunxi/sun8iw8/standby/libstandby.o) .data)
+ .data          0x40965c90        0x0 arch/arm/cpu/armv7/start.o
+ .data          0x40965c90        0x0 arch/arm/cpu/armv7/libarmv7.o
+ .data          0x40965c90     0x1a70 arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+                0x409676e4                timer_callback
+ .data          0x40967700       0x40 arch/arm/lib/libarm.o
+                0x40967700                init_sequence
+ .data          0x40967740      0x6fc common/libcommon.o
+                0x409678ec                load_addr
+                0x409678f0                tests
+                0x40967970                seed2
+                0x40967974                seed1
+                0x40967978                IGNORE_ENV_VARIABLE
+                0x40967da0                env_size
+                0x40967da4                env_name_spec
+                0x40967e30                stdio_names
+ .data          0x40967e3c        0x0 disk/libdisk.o
+ .data          0x40967e3c        0x0 drivers/dma/libdma.o
+ .data          0x40967e3c        0x0 drivers/i2c/libi2c.o
+ .data          0x40967e3c        0x8 drivers/mmc/libmmc.o
+                0x40967e3c                mmc_devices
+ .data          0x40967e44        0x0 drivers/pcmcia/libpcmcia.o
+ .data          0x40967e44       0xec drivers/power/libpower.o
+                0x40967e44                sunxi_axp_dev
+                0x40967e68                sunxi_axp_20
+                0x40967ecc                sunxi_axp_null
+ .data          0x40967f30       0x10 drivers/pwm/libsunxi_pwm.o
+                0x40967f30                pwm_active_sta
+ .data          0x40967f40        0x0 drivers/rtc/librtc.o
+ .data          0x40967f40        0x0 drivers/serial/libserial.o
+ .data          0x40967f40        0x0 drivers/smc/libsmc.o
+ .data          0x40967f40        0x0 drivers/spi/libspi.o
+ .data          0x40967f40        0x4 drivers/spinor/libspinor.o
+ .data          0x40967f44        0x0 drivers/srclib/libjpeddec.o
+ .data          0x40967f44       0x50 drivers/storage_type/libstorage_type.o
+                0x40967f44                sunxi_sprite_datafinish_pt
+                0x40967f48                sunxi_sprite_datafinish_card_pt
+                0x40967f4c                sunxi_flash_read_pt
+                0x40967f50                sunxi_flash_write_pt
+                0x40967f54                sunxi_flash_size_pt
+                0x40967f58                sunxi_flash_exit_pt
+                0x40967f5c                sunxi_flash_flush_pt
+                0x40967f60                sunxi_flash_phyread_pt
+                0x40967f64                sunxi_flash_phywrite_pt
+                0x40967f68                sunxi_sprite_init_pt
+                0x40967f6c                sunxi_sprite_read_pt
+                0x40967f70                sunxi_sprite_write_pt
+                0x40967f74                sunxi_sprite_erase_pt
+                0x40967f78                sunxi_sprite_size_pt
+                0x40967f7c                sunxi_sprite_exit_pt
+                0x40967f80                sunxi_sprite_flush_pt
+                0x40967f84                sunxi_sprite_phyread_pt
+                0x40967f88                sunxi_sprite_phywrite_pt
+                0x40967f8c                sunxi_sprite_force_erase_pt
+                0x40967f90                sunxi_flash_init_pt
+ .data          0x40967f94     0x41d8 drivers/video_sunxi/libvideo_sunxi.o
+                0x409681d4                panel_array
+                0x409681e8                default_panel
+                0x4096821c                lt070me05000_panel
+                0x40968250                t27p06_panel
+                0x40968284                vs043con08v0_panel
+                0x409682b8                bicubic4coefftab32
+                0x40968ab8                bicubic8coefftab32_right
+                0x409692b8                bicubic8coefftab32_left
+                0x40969ab8                lan2coefftab32
+                0x4096a2b8                lan3coefftab32_right
+                0x4096aab8                lan3coefftab32_left
+                0x4096b2b8                lan2coefftab16
+                0x4096b6b8                fcc_range_gain
+                0x4096b6d0                sin_cos
+                0x4096b8d0                bypass_csc
+                0x4096b900                r2r
+                0x4096b980                y2y
+                0x4096ba80                r2y
+                0x4096bc80                y2r
+                0x4096bf84                hist_thres_drc
+                0x4096bf8c                csc_bypass_coeff
+                0x4096bfbc                smbl_filter_coeff
+                0x4096c0cc                hist_thres_pwrsv
+                0x4096c0d4                drc_filter
+                0x4096c0ec                wb_lan2coefftab16_down
+                0x4096c12c                wb_lan2coefftab16
+ .data          0x4096c16c        0x0 fs/aw_fs/libawfat.o
+ .data          0x4096c16c      0x208 fs/fat/libfat.o
+                0x4096c170                file_cwd
+ .data          0x4096c374        0x0 lib/libgeneric.o
+ .data          0x4096c374        0x0 lib/zlib/libz.o
+ .data          0x4096c374        0x5 memtest/libsunxi_memtest.o
+                0x4096c374                mem_progress
+ .data          0x4096c379       0xa8 sprite/libsprite.o
+                0x4096c379                qt0
+                0x4096c399                qt1
+                0x4096c3b9                ashx
+                0x4096c3c9                ror4
+                0x4096c3d9                qt3
+                0x4096c3f9                qt2
+                0x4096c419                tab_5b
+                0x4096c41d                tab_ef
+ *fill*         0x4096c421        0x3 00
+ .data          0x4096c424      0x1c0 usb_sunxi/libsunxi_usb.o
+                0x4096c424                sunxi_usb_mass_dev
+                0x4096c434                setup_req_1
+                0x4096c454                sunxi_usb_mass_iProduct
+                0x4096c474                sunxi_usb_mass_iManufacturer
+                0x4096c494                sunxi_usb_mass_iSerialNum0
+                0x4096c4b4                normal_LangID
+                0x4096c4c0                setup_req_2
+                0x4096c4e0                sunxi_usb_fastboot_dev
+                0x4096c4f8                setup_req_3
+                0x4096c518                sunxi_fastboot_normal_LangID
+                0x4096c520                setup_req_4
+                0x4096c540                sunxi_usb_pburn_dev
+                0x4096c550                sunxi_usb_pburn_iProduct
+                0x4096c570                sunxi_usb_pburn_iManufacturer
+                0x4096c590                sunxi_usb_pburn_iSerialNum0
+                0x4096c5b0                sunxi_usb_pbur_normal_LangID
+                0x4096c5b8                buf_queue_max_len
+                0x4096c5bc                buf_queue_page_size
+                0x4096c5c4                setup_req_5
+ .data          0x4096c5e4        0x0 board/sunxi/sun8iw8/libsun8iw8.o
+ .data          0x4096c5e4        0x4 board/sunxi/libsunxi.o
+                0x4096c5e4                loglel_change_flag
+ .data          0x4096c5e8        0x0 /home/welcome/Documents/v3s/qt/u-boot-2011.09/arch/arm/lib/eabi_compat.o
+ .data          0x4096c5e8        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_lshrdi3.o)
+ .data          0x4096c5e8        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashrdi3.o)
+ .data          0x4096c5e8        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashldi3.o)
+ .data          0x4096c5e8        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_addsubdf3.o)
+ .data          0x4096c5e8        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_muldivdf3.o)
+ .data          0x4096c5e8        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_fixdfsi.o)
+ .data          0x4096c5e8        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_truncdfsf2.o)
+ .data          0x4096c5e8        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_addsubsf3.o)
+ .data          0x4096c5e8        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_muldivsf3.o)
+ .data          0x4096c5e8        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_fixsfsi.o)
+
+.got            0x4096c5e8        0x0
+ .got           0x00000000        0x0 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+
+.got.plt        0x4096c5e8        0xc
+ .got.plt       0x4096c5e8        0xc arch/arm/cpu/armv7/sun8iw8/spare_head.o
+                0x4096c5e8                _GLOBAL_OFFSET_TABLE_
+
+.igot.plt       0x4096c5f4        0x0
+ .igot.plt      0x00000000        0x0 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+                0x4096c5f4                . = ALIGN (0x4)
+                0x4096c5f4                . = .
+                0x4096c5f4                __u_boot_cmd_start = .
+
+.u_boot_cmd     0x4096c5f4      0x700
+ *(.u_boot_cmd)
+ .u_boot_cmd    0x4096c5f4       0x1c arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+                0x4096c5f4                __u_boot_cmd_key_test
+ .u_boot_cmd    0x4096c610      0x6c8 common/libcommon.o
+                0x4096c610                __u_boot_cmd_reset
+                0x4096c62c                __u_boot_cmd_go
+                0x4096c648                __u_boot_cmd_boota
+                0x4096c664                __u_boot_cmd_bootd
+                0x4096c680                __u_boot_cmd_boot
+                0x4096c69c                __u_boot_cmd_bootm
+                0x4096c6b8                __u_boot_cmd_pburn
+                0x4096c6d4                __u_boot_cmd_bootvx
+                0x4096c6f0                __u_boot_cmd_bootelf
+                0x4096c70c                __u_boot_cmd_exit
+                0x4096c728                __u_boot_cmd_fatinfo
+                0x4096c744                __u_boot_cmd_fatls
+                0x4096c760                __u_boot_cmd_fatdown
+                0x4096c77c                __u_boot_cmd_fatload
+                0x4096c798                __u_boot_cmd_efex
+                0x4096c7b4                __u_boot_cmd_question_mark
+                0x4096c7d0                __u_boot_cmd_help
+                0x4096c7ec                __u_boot_cmd_power_probe
+                0x4096c808                __u_boot_cmd_sys_config
+                0x4096c824                __u_boot_cmd_delay_test
+                0x4096c840                __u_boot_cmd_memcpy_test
+                0x4096c85c                __u_boot_cmd_efex_test
+                0x4096c878                __u_boot_cmd_mass_test
+                0x4096c894                __u_boot_cmd_fastboot_test
+                0x4096c8b0                __u_boot_cmd_sprite_test
+                0x4096c8cc                __u_boot_cmd_timer_test1
+                0x4096c8e8                __u_boot_cmd_timer_test
+                0x4096c904                __u_boot_cmd_mtest
+                0x4096c920                __u_boot_cmd_loop
+                0x4096c93c                __u_boot_cmd_base
+                0x4096c958                __u_boot_cmd_crc32
+                0x4096c974                __u_boot_cmd_cmp
+                0x4096c990                __u_boot_cmd_cp
+                0x4096c9ac                __u_boot_cmd_mw
+                0x4096c9c8                __u_boot_cmd_nm
+                0x4096c9e4                __u_boot_cmd_mm
+                0x4096ca00                __u_boot_cmd_md
+                0x4096ca1c                __u_boot_cmd_mmc
+                0x4096ca38                __u_boot_cmd_mmcinfo
+                0x4096ca54                __u_boot_cmd_savecfg
+                0x4096ca70                __u_boot_cmd_setcfg
+                0x4096ca8c                __u_boot_cmd_run
+                0x4096caa8                __u_boot_cmd_setenv
+                0x4096cac4                __u_boot_cmd_printenv
+                0x4096cae0                __u_boot_cmd_env
+                0x4096cafc                __u_boot_cmd_saveenv
+                0x4096cb18                __u_boot_cmd_sprite_recovery
+                0x4096cb34                __u_boot_cmd_recovery
+                0x4096cb50                __u_boot_cmd_shutdown
+                0x4096cb6c                __u_boot_cmd_standby
+                0x4096cb88                __u_boot_cmd_logo
+                0x4096cba4                __u_boot_cmd_sunxi_bmp_show
+                0x4096cbc0                __u_boot_cmd_sunxi_bmp_info
+                0x4096cbdc                __u_boot_cmd_sunxi_flash
+                0x4096cbf8                __u_boot_cmd_memtester
+                0x4096cc14                __u_boot_cmd_sunxi_boot_signature
+                0x4096cc30                __u_boot_cmd_save_userdata
+                0x4096cc4c                __u_boot_cmd_true
+                0x4096cc68                __u_boot_cmd_false
+                0x4096cc84                __u_boot_cmd_test
+                0x4096cca0                __u_boot_cmd_version
+                0x4096ccbc                __u_boot_cmd_showvar
+ .u_boot_cmd    0x4096ccd8       0x1c board/sunxi/libsunxi.o
+                0x4096ccd8                __u_boot_cmd_screen_char
+                0x4096ccf4                __u_boot_cmd_end = .
+                0x4096ccf4                . = ALIGN (0x4)
+                0x4096ccf4                __image_copy_end = .
+
+.rel.dyn        0x4096ccf4     0xa2a8
+                0x4096ccf4                __rel_dyn_start = .
+ *(.rel*)
+ .rel.got       0x00000000        0x0 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+ .rel.plt       0x00000000        0x0 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+ .rel.iplt      0x00000000        0x0 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+ .rel.text      0x4096ccf4     0x83e8 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+ .rel.data      0x409750dc     0x1078 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+ .rel.u_boot_cmd
+                0x40976154      0x808 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+ .rel.rodata    0x4097695c      0x640 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+                0x40976f9c                __rel_dyn_end = .
+
+.dynsym         0x40976f9c      0x110
+                0x40976f9c                __dynsym_start = .
+ *(.dynsym)
+ .dynsym        0x40976f9c      0x110 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+                0x409770ac                _end = .
+                0x409770ac                _standby_start_lma = .
+
+.boot_standby   0x00001000      0x4c4 load address 0x409770ac
+                0x00001000                _standby_start = .
+ board/sunxi/sun8iw8/standby/libstandby.o(.text .data .bss .rodata)
+ .text          0x00001000      0x4c0 board/sunxi/sun8iw8/standby/libstandby.o
+                0x00001000                standby_clock_to_24M
+                0x00001044                standby_clock_to_pll1
+                0x00001088                standby_clock_plldisable
+                0x000010c4                standby_clock_pllenable
+                0x00001140                boot_standby_mode
+                0x00001158                standby_axp_output_control
+                0x00001160                standby_axp_store_int_status
+                0x00001168                standby_axp_restore_int_status
+                0x00001170                standby_axp_int_query
+                0x00001178                standby_axp_probe_power_exist
+                0x000011a0                standby_axp_probe_key
+                0x000011f4                standby_axp_probe_usb
+                0x0000124c                standby_int_disable
+                0x00001260                standby_int_enable
+                0x00001274                standby_gic_store
+                0x0000128c                standby_gic_restore
+                0x000012a4                standby_gic_probe_pengding
+                0x000012e4                standby_axp_i2c_read
+                0x000012ec                standby_axp_i2c_write
+                0x000012f4                standby_serial_putc
+                0x00001314                standby_timer_delay
+                0x00001334                mctl_self_refresh_entry
+                0x000013d0                dram_power_save_process
+                0x000013e0                mctl_self_refresh_exit
+                0x00001480                dram_power_up_process
+                0x00001490                boot_store_sp
+                0x000014a0                boot_restore_sp
+                0x000014b0                boot_set_sp
+                0x000014b8                boot_halt
+ .data          0x000014c0        0x0 board/sunxi/sun8iw8/standby/libstandby.o
+ .bss           0x000014c0        0x4 board/sunxi/sun8iw8/standby/libstandby.o
+                0x000014c4                _standby_end = .
+
+.bss            0x4096ccf4   0x43d638
+                0x4096ccf4                __bss_start = .
+ *(.bss)
+ .bss           0x4096ccf4        0x0 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+ .bss           0x4096ccf4        0x0 arch/arm/cpu/armv7/start.o
+ .bss           0x4096ccf4        0x0 arch/arm/cpu/armv7/libarmv7.o
+ .bss           0x4096ccf4      0x584 arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+                0x4096ccf4                sunxi_int_handlers
+ .bss           0x4096d278        0x8 arch/arm/lib/libarm.o
+                0x4096d278                monitor_flash_len
+ .bss           0x4096d280     0x3898 common/libcommon.o
+                0x4096d5ac                burn_private_start
+                0x4096d5b0                burn_private_len
+                0x4096d5bc                timer1_t
+                0x4096d5cc                timer0_t
+                0x4096d5f0                pblc_keys
+                0x4096d5f8                prvt_keys
+                0x4096d600                key
+                0x4096d604                cryptTable
+                0x4096ea04                USER_DATA_NUM
+                0x4096ea08                USER_DATA_NAME
+                0x4096ee50                mem_malloc_brk
+                0x4096ee54                mem_malloc_start
+                0x4096ee58                mem_malloc_end
+                0x4096ee94                env_htab
+                0x4096eea0                env_ptr
+                0x4096eff0                last_return_code
+                0x4096f0f8                nesting_level
+                0x4096f108                hist_num
+                0x4096f10c                hist_lines
+                0x40970520                hist_list
+                0x40970570                console_buffer
+                0x409706b0                stdio_devices
+ .bss           0x40970b18        0x0 disk/libdisk.o
+ .bss           0x40970b18      0x1c4 drivers/dma/libdma.o
+ .bss           0x40970cdc        0x0 drivers/i2c/libi2c.o
+ *fill*         0x40970cdc        0x4 00
+ .bss           0x40970ce0      0xc60 drivers/mmc/libmmc.o
+                0x40970ce0                mmc_host
+                0x40971340                mmc_dev
+ .bss           0x40971940        0x0 drivers/pcmcia/libpcmcia.o
+ .bss           0x40971940       0x18 drivers/power/libpower.o
+ .bss           0x40971958       0xf0 drivers/pwm/libsunxi_pwm.o
+                0x40971958                pwm_pin_count
+                0x40971968                pwm_gpio_info
+ .bss           0x40971a48        0x0 drivers/rtc/librtc.o
+ .bss           0x40971a48        0x0 drivers/serial/libserial.o
+ .bss           0x40971a48        0x0 drivers/smc/libsmc.o
+ .bss           0x40971a48       0x14 drivers/spi/libspi.o
+ .bss           0x40971a5c       0x1c drivers/spinor/libspinor.o
+                0x40971a6c                total_write_bytes
+                0x40971a74                spinor_verify
+ .bss           0x40971a78      0x100 drivers/srclib/libjpeddec.o
+ .bss           0x40971b78       0x90 drivers/storage_type/libstorage_type.o
+ .bss           0x40971c08     0x18a4 drivers/video_sunxi/libvideo_sunxi.o
+                0x40971d00                gdisp
+                0x40971e08                g_lcd_drv
+                0x40972804                g_hist_status
+                0x40972810                g_ce_status
+                0x409730ac                g_bws_status
+                0x409730c8                g_sum
+                0x409730d4                g_hist_p
+                0x409730e0                g_hist
+                0x4097314c                pwrsv_lgc_tab
+ .bss           0x409734ac   0x4002b8 fs/aw_fs/libawfat.o
+                0x40d73734                PART_NAME
+ .bss           0x40d73764    0x30014 fs/fat/libfat.o
+                0x40d73764                cur_dev
+                0x40d73768                part_offset
+                0x40d7376c                get_vfatname_block
+                0x40d8376c                do_fat_read_block
+                0x40d9376c                get_dentfromdir_block
+ .bss           0x40da3778        0x8 lib/libgeneric.o
+                0x40da3778                errno
+                0x40da377c                ___strtok
+ .bss           0x40da3780        0x0 lib/zlib/libz.o
+ .bss           0x40da3780        0x4 memtest/libsunxi_memtest.o
+                0x40da3780                use_phys
+ .bss           0x40da3784     0x25dc sprite/libsprite.o
+                0x40da3790                handle
+                0x40da3794                twi_org
+                0x40da5a88                img_file_start
+                0x40da5a8c                part_info
+                0x40da5d44                gpio_handle
+                0x40da5d50                TIMER0
+ .bss           0x40da5d60      0x450 usb_sunxi/libsunxi_usb.o
+                0x40da5dec                efex_suspend_flag
+                0x40da5e60                fastboot_data_flag
+                0x40da5eb0                buf_queue_init_flag
+                0x40da5eb4                buf_queue_base_buf
+                0x40da5eb8                buf_queue_tail
+                0x40da5ebc                buf_queue_head
+                0x40da5ec0                buf_queue_current_len
+                0x40da5ec4                buf_queue_element
+                0x40da5f10                logo_buf
+                0x40da5f14                logo_info
+                0x40da5f24                efex_test
+                0x40da5f3c                sunxi_udc_source
+                0x40da5f7c                sunxi_udev_active
+ .bss           0x40da61b0        0x0 board/sunxi/sun8iw8/libsun8iw8.o
+ .bss           0x40da61b0     0x417c board/sunxi/libsunxi.o
+                0x40da61b8                rgb_info
+                0x40da61d4                timer_for_usb
+                0x40da61e4                boot_standby_action
+                0x40da61e8                sprite_source
+                0x40da620c                progress
+                0x40da6244                bat_bmp_store
+                0x40da62fc                ui_char_info
+                0x40da6320                font
+                0x40da6324                face
+ .bss           0x40daa32c        0x0 /home/welcome/Documents/v3s/qt/u-boot-2011.09/arch/arm/lib/eabi_compat.o
+ .bss           0x40daa32c        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_lshrdi3.o)
+ .bss           0x40daa32c        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashrdi3.o)
+ .bss           0x40daa32c        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashldi3.o)
+ .bss           0x40daa32c        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_addsubdf3.o)
+ .bss           0x40daa32c        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_muldivdf3.o)
+ .bss           0x40daa32c        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_fixdfsi.o)
+ .bss           0x40daa32c        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x40daa32c        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_addsubsf3.o)
+ .bss           0x40daa32c        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_muldivsf3.o)
+ .bss           0x40daa32c        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_fixsfsi.o)
+                0x40daa32c                . = ALIGN (0x4)
+                0x40daa32c                __bss_end__ = .
+
+.dynbss         0x000014c4        0x0 load address 0x817203d8
+ .dynbss        0x00000000        0x0 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+
+/DISCARD/
+ *(.dynstr*)
+ *(.dynamic*)
+ *(.plt*)
+ *(.interp*)
+ *(.gnu*)
+LOAD arch/arm/cpu/armv7/start.o
+START GROUP
+LOAD api/libapi.o
+LOAD arch/arm/cpu/armv7/libarmv7.o
+LOAD arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+LOAD arch/arm/lib/libarm.o
+LOAD board/sunxi/sun8iw8/standby/libstandby.o
+LOAD common/libcommon.o
+LOAD disk/libdisk.o
+LOAD drivers/audio/libaudio.o
+LOAD drivers/bios_emulator/libatibiosemu.o
+LOAD drivers/block/libblock.o
+LOAD drivers/dma/libdma.o
+LOAD drivers/gpio/libgpio.o
+LOAD drivers/hwmon/libhwmon.o
+LOAD drivers/i2c/libi2c.o
+LOAD drivers/input/libinput.o
+LOAD drivers/misc/libmisc.o
+LOAD drivers/mmc/libmmc.o
+LOAD drivers/mtd/nand/libnand.o
+LOAD drivers/mtd/onenand/libonenand.o
+LOAD drivers/mtd/spi/libspi_flash.o
+LOAD drivers/mtd/ubi/libubi.o
+LOAD drivers/net/libnet.o
+LOAD drivers/net/phy/libphy.o
+LOAD drivers/p2wi/libp2wi.o
+LOAD drivers/pci/libpci.o
+LOAD drivers/pcmcia/libpcmcia.o
+LOAD drivers/power/libpower.o
+LOAD drivers/pwm/libsunxi_pwm.o
+LOAD drivers/rsb/librsb.o
+LOAD drivers/rtc/librtc.o
+LOAD drivers/serial/libserial.o
+LOAD drivers/smc/libsmc.o
+LOAD drivers/spi/libspi.o
+LOAD drivers/spinor/libspinor.o
+LOAD drivers/srclib/libjpeddec.o
+LOAD drivers/storage_type/libstorage_type.o
+LOAD drivers/twserial/libtws.o
+LOAD drivers/usb/eth/libusb_eth.o
+LOAD drivers/usb/gadget/libusb_gadget.o
+LOAD drivers/usb/host/libusb_host.o
+LOAD drivers/usb/musb/libusb_musb.o
+LOAD drivers/usb/phy/libusb_phy.o
+LOAD drivers/video_sunxi/libvideo_sunxi.o
+LOAD drivers/watchdog/libwatchdog.o
+LOAD fs/aw_fs/libawfat.o
+LOAD fs/cramfs/libcramfs.o
+LOAD fs/ext2/libext2fs.o
+LOAD fs/fat/libfat.o
+LOAD fs/fdos/libfdos.o
+LOAD fs/jffs2/libjffs2.o
+LOAD fs/reiserfs/libreiserfs.o
+LOAD fs/ubifs/libubifs.o
+LOAD fs/yaffs2/libyaffs2.o
+LOAD lib/libfdt/libfdt.o
+LOAD lib/libgeneric.o
+LOAD lib/lzma/liblzma.o
+LOAD lib/lzo/liblzo.o
+LOAD lib/zlib/libz.o
+LOAD memtest/libsunxi_memtest.o
+LOAD net/libnet.o
+LOAD post/libpost.o
+LOAD sprite/libsprite.o
+LOAD usb_sunxi/libsunxi_usb.o
+LOAD board/sunxi/sun8iw8/libsun8iw8.o
+LOAD board/sunxi/libsunxi.o
+END GROUP
+LOAD /home/welcome/Documents/v3s/qt/u-boot-2011.09/arch/arm/lib/eabi_compat.o
+LOAD /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a
+OUTPUT(u-boot elf32-littlearm)
+
+.debug_info     0x00000000    0x92c0e
+ .debug_info    0x00000000      0x322 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+ .debug_info    0x00000322       0x6f arch/arm/cpu/armv7/start.o
+ .debug_info    0x00000391     0x155e board/sunxi/sun8iw8/standby/libstandby.o
+ .debug_info    0x000018ef      0xaec arch/arm/cpu/armv7/libarmv7.o
+ .debug_info    0x000023db     0x838e arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+ .debug_info    0x0000a769     0x2d40 arch/arm/lib/libarm.o
+ .debug_info    0x0000d4a9    0x1643b common/libcommon.o
+ .debug_info    0x000238e4     0x1182 disk/libdisk.o
+ .debug_info    0x00024a66      0x92b drivers/dma/libdma.o
+ .debug_info    0x00025391      0xaff drivers/i2c/libi2c.o
+ .debug_info    0x00025e90     0x53fb drivers/mmc/libmmc.o
+ .debug_info    0x0002b28b       0xe6 drivers/pcmcia/libpcmcia.o
+ .debug_info    0x0002b371     0x2abf drivers/power/libpower.o
+ .debug_info    0x0002de30      0x5ab drivers/pwm/libsunxi_pwm.o
+ .debug_info    0x0002e3db       0x73 drivers/rtc/librtc.o
+ .debug_info    0x0002e44e     0x122c drivers/serial/libserial.o
+ .debug_info    0x0002f67a      0x47f drivers/smc/libsmc.o
+ .debug_info    0x0002faf9      0xaf2 drivers/spi/libspi.o
+ .debug_info    0x000305eb     0x1476 drivers/spinor/libspinor.o
+ .debug_info    0x00031a61     0x2c3b drivers/srclib/libjpeddec.o
+ .debug_info    0x0003469c     0x1ac8 drivers/storage_type/libstorage_type.o
+ .debug_info    0x00036164    0x37ee7 drivers/video_sunxi/libvideo_sunxi.o
+ .debug_info    0x0006e04b     0x2959 fs/aw_fs/libawfat.o
+ .debug_info    0x000709a4     0x2e3b fs/fat/libfat.o
+ .debug_info    0x000737df     0x3741 lib/libgeneric.o
+ .debug_info    0x00076f20     0x1040 lib/zlib/libz.o
+ .debug_info    0x00077f60      0x9aa memtest/libsunxi_memtest.o
+ .debug_info    0x0007890a     0x6269 sprite/libsprite.o
+ .debug_info    0x0007eb73     0x9745 usb_sunxi/libsunxi_usb.o
+ .debug_info    0x000882b8      0x7de board/sunxi/sun8iw8/libsun8iw8.o
+ .debug_info    0x00088a96     0xa0c4 board/sunxi/libsunxi.o
+ .debug_info    0x00092b5a       0xb4 /home/welcome/Documents/v3s/qt/u-boot-2011.09/arch/arm/lib/eabi_compat.o
+
+.debug_abbrev   0x00000000    0x178ce
+ .debug_abbrev  0x00000000       0x87 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+ .debug_abbrev  0x00000087       0x14 arch/arm/cpu/armv7/start.o
+ .debug_abbrev  0x0000009b      0x71e board/sunxi/sun8iw8/standby/libstandby.o
+ .debug_abbrev  0x000007b9      0x3a8 arch/arm/cpu/armv7/libarmv7.o
+ .debug_abbrev  0x00000b61     0x15ef arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+ .debug_abbrev  0x00002150      0x9f0 arch/arm/lib/libarm.o
+ .debug_abbrev  0x00002b40     0x4d1a common/libcommon.o
+ .debug_abbrev  0x0000785a      0x455 disk/libdisk.o
+ .debug_abbrev  0x00007caf      0x281 drivers/dma/libdma.o
+ .debug_abbrev  0x00007f30      0x277 drivers/i2c/libi2c.o
+ .debug_abbrev  0x000081a7      0x963 drivers/mmc/libmmc.o
+ .debug_abbrev  0x00008b0a       0x54 drivers/pcmcia/libpcmcia.o
+ .debug_abbrev  0x00008b5e      0x7c3 drivers/power/libpower.o
+ .debug_abbrev  0x00009321      0x285 drivers/pwm/libsunxi_pwm.o
+ .debug_abbrev  0x000095a6       0x2a drivers/rtc/librtc.o
+ .debug_abbrev  0x000095d0      0x344 drivers/serial/libserial.o
+ .debug_abbrev  0x00009914       0xd6 drivers/smc/libsmc.o
+ .debug_abbrev  0x000099ea      0x32e drivers/spi/libspi.o
+ .debug_abbrev  0x00009d18      0x3f1 drivers/spinor/libspinor.o
+ .debug_abbrev  0x0000a109      0x674 drivers/srclib/libjpeddec.o
+ .debug_abbrev  0x0000a77d      0x35d drivers/storage_type/libstorage_type.o
+ .debug_abbrev  0x0000aada     0x5c32 drivers/video_sunxi/libvideo_sunxi.o
+ .debug_abbrev  0x0001070c      0x443 fs/aw_fs/libawfat.o
+ .debug_abbrev  0x00010b4f      0x827 fs/fat/libfat.o
+ .debug_abbrev  0x00011376     0x13f8 lib/libgeneric.o
+ .debug_abbrev  0x0001276e      0x335 lib/zlib/libz.o
+ .debug_abbrev  0x00012aa3       0xf4 memtest/libsunxi_memtest.o
+ .debug_abbrev  0x00012b97     0x15d9 sprite/libsprite.o
+ .debug_abbrev  0x00014170     0x191b usb_sunxi/libsunxi_usb.o
+ .debug_abbrev  0x00015a8b      0x181 board/sunxi/sun8iw8/libsun8iw8.o
+ .debug_abbrev  0x00015c0c     0x1c5b board/sunxi/libsunxi.o
+ .debug_abbrev  0x00017867       0x67 /home/welcome/Documents/v3s/qt/u-boot-2011.09/arch/arm/lib/eabi_compat.o
+
+.debug_line     0x00000000    0x1d2d9
+ .debug_line    0x00000000       0x86 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+ .debug_line    0x00000086       0xfa arch/arm/cpu/armv7/start.o
+ .debug_line    0x00000180      0x6e1 board/sunxi/sun8iw8/standby/libstandby.o
+ .debug_line    0x00000861      0x273 arch/arm/cpu/armv7/libarmv7.o
+ .debug_line    0x00000ad4     0x17c7 arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+ .debug_line    0x0000229b      0x8c6 arch/arm/lib/libarm.o
+ .debug_line    0x00002b61     0x5268 common/libcommon.o
+ .debug_line    0x00007dc9      0x3ba disk/libdisk.o
+ .debug_line    0x00008183      0x2aa drivers/dma/libdma.o
+ .debug_line    0x0000842d      0x2c2 drivers/i2c/libi2c.o
+ .debug_line    0x000086ef      0xfc4 drivers/mmc/libmmc.o
+ .debug_line    0x000096b3       0x3a drivers/pcmcia/libpcmcia.o
+ .debug_line    0x000096ed      0x893 drivers/power/libpower.o
+ .debug_line    0x00009f80      0x1ad drivers/pwm/libsunxi_pwm.o
+ .debug_line    0x0000a12d       0x1d drivers/rtc/librtc.o
+ .debug_line    0x0000a14a      0x2f3 drivers/serial/libserial.o
+ .debug_line    0x0000a43d      0x133 drivers/smc/libsmc.o
+ .debug_line    0x0000a570      0x2c5 drivers/spi/libspi.o
+ .debug_line    0x0000a835      0x49d drivers/spinor/libspinor.o
+ .debug_line    0x0000acd2     0x1509 drivers/srclib/libjpeddec.o
+ .debug_line    0x0000c1db      0x2ff drivers/storage_type/libstorage_type.o
+ .debug_line    0x0000c4da     0x6a79 drivers/video_sunxi/libvideo_sunxi.o
+ .debug_line    0x00012f53      0xb9c fs/aw_fs/libawfat.o
+ .debug_line    0x00013aef      0xbda fs/fat/libfat.o
+ .debug_line    0x000146c9     0x19f8 lib/libgeneric.o
+ .debug_line    0x000160c1      0xb14 lib/zlib/libz.o
+ .debug_line    0x00016bd5      0x3c8 memtest/libsunxi_memtest.o
+ .debug_line    0x00016f9d     0x1cc0 sprite/libsprite.o
+ .debug_line    0x00018c5d     0x1f7e usb_sunxi/libsunxi_usb.o
+ .debug_line    0x0001abdb      0x19b board/sunxi/sun8iw8/libsun8iw8.o
+ .debug_line    0x0001ad76     0x2522 board/sunxi/libsunxi.o
+ .debug_line    0x0001d298       0x41 /home/welcome/Documents/v3s/qt/u-boot-2011.09/arch/arm/lib/eabi_compat.o
+
+.debug_str      0x00000000    0x1b82b
+ .debug_str     0x00000000      0x212 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+                                0x2ac (size before relaxing)
+ .debug_str     0x00000212      0x6d4 board/sunxi/sun8iw8/standby/libstandby.o
+                                0xf14 (size before relaxing)
+ .debug_str     0x000008e6      0x35f arch/arm/cpu/armv7/libarmv7.o
+                                0x686 (size before relaxing)
+ .debug_str     0x00000c45     0x2367 arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+                               0x3a82 (size before relaxing)
+ .debug_str     0x00002fac      0x821 arch/arm/lib/libarm.o
+                               0x1c6b (size before relaxing)
+ .debug_str     0x000037cd     0x3a65 common/libcommon.o
+                               0xb3e2 (size before relaxing)
+ .debug_str     0x00007232      0x25d disk/libdisk.o
+                                0x910 (size before relaxing)
+ .debug_str     0x0000748f      0x2f2 drivers/dma/libdma.o
+                                0x4fb (size before relaxing)
+ .debug_str     0x00007781      0x472 drivers/i2c/libi2c.o
+                                0x5bd (size before relaxing)
+ .debug_str     0x00007bf3      0x81c drivers/mmc/libmmc.o
+                               0x1a2c (size before relaxing)
+ .debug_str     0x0000840f       0x5a drivers/pcmcia/libpcmcia.o
+                                0x1ed (size before relaxing)
+ .debug_str     0x00008469      0xc19 drivers/power/libpower.o
+                               0x1ae3 (size before relaxing)
+ .debug_str     0x00009082      0x1b3 drivers/pwm/libsunxi_pwm.o
+                                0x2c1 (size before relaxing)
+ .debug_str     0x00009235       0x41 drivers/rtc/librtc.o
+                                 0xec (size before relaxing)
+ .debug_str     0x00009276      0x22f drivers/serial/libserial.o
+                                0x9da (size before relaxing)
+ .debug_str     0x000094a5       0x46 drivers/smc/libsmc.o
+                                0x375 (size before relaxing)
+ .debug_str     0x000094eb      0x227 drivers/spi/libspi.o
+                                0x405 (size before relaxing)
+ .debug_str     0x00009712      0x8f1 drivers/spinor/libspinor.o
+                                0xc3d (size before relaxing)
+ .debug_str     0x0000a003      0xaf2 drivers/srclib/libjpeddec.o
+                                0xf28 (size before relaxing)
+ .debug_str     0x0000aaf5      0x783 drivers/storage_type/libstorage_type.o
+                                0xdca (size before relaxing)
+ .debug_str     0x0000b278     0xa1b0 drivers/video_sunxi/libvideo_sunxi.o
+                              0x23e1c (size before relaxing)
+ .debug_str     0x00015428      0x5d4 fs/aw_fs/libawfat.o
+                                0x8f2 (size before relaxing)
+ .debug_str     0x000159fc      0x6ce fs/fat/libfat.o
+                               0x10a9 (size before relaxing)
+ .debug_str     0x000160ca      0x60e lib/libgeneric.o
+                               0x17e2 (size before relaxing)
+ .debug_str     0x000166d8      0x2e6 lib/zlib/libz.o
+                                0x590 (size before relaxing)
+ .debug_str     0x000169be      0x1cd memtest/libsunxi_memtest.o
+                                0x29f (size before relaxing)
+ .debug_str     0x00016b8b     0x1261 sprite/libsprite.o
+                               0x38b3 (size before relaxing)
+ .debug_str     0x00017dec     0x1af0 usb_sunxi/libsunxi_usb.o
+                               0x513d (size before relaxing)
+ .debug_str     0x000198dc       0xb1 board/sunxi/sun8iw8/libsun8iw8.o
+                                0x5bb (size before relaxing)
+ .debug_str     0x0001998d     0x1e6c board/sunxi/libsunxi.o
+                               0x6814 (size before relaxing)
+ .debug_str     0x0001b7f9       0x32 /home/welcome/Documents/v3s/qt/u-boot-2011.09/arch/arm/lib/eabi_compat.o
+                                0x118 (size before relaxing)
+
+.comment        0x00000000       0x64
+ .comment       0x00000000       0x64 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+                                 0x65 (size before relaxing)
+ .comment       0x00000000      0x328 board/sunxi/sun8iw8/standby/libstandby.o
+ .comment       0x00000000      0x12f arch/arm/cpu/armv7/libarmv7.o
+ .comment       0x00000000      0x4bc arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+ .comment       0x00000000      0x25e arch/arm/lib/libarm.o
+ .comment       0x00000000     0x1092 common/libcommon.o
+ .comment       0x00000000       0xca disk/libdisk.o
+ .comment       0x00000000       0x65 drivers/dma/libdma.o
+ .comment       0x00000000       0x65 drivers/i2c/libi2c.o
+ .comment       0x00000000       0xca drivers/mmc/libmmc.o
+ .comment       0x00000000       0xca drivers/pcmcia/libpcmcia.o
+ .comment       0x00000000      0x1f9 drivers/power/libpower.o
+ .comment       0x00000000       0x65 drivers/pwm/libsunxi_pwm.o
+ .comment       0x00000000       0x65 drivers/rtc/librtc.o
+ .comment       0x00000000       0xca drivers/serial/libserial.o
+ .comment       0x00000000       0x65 drivers/smc/libsmc.o
+ .comment       0x00000000       0x65 drivers/spi/libspi.o
+ .comment       0x00000000       0x65 drivers/spinor/libspinor.o
+ .comment       0x00000000      0x12f drivers/srclib/libjpeddec.o
+ .comment       0x00000000       0x65 drivers/storage_type/libstorage_type.o
+ .comment       0x00000000      0xfc8 drivers/video_sunxi/libvideo_sunxi.o
+ .comment       0x00000000       0xca fs/aw_fs/libawfat.o
+ .comment       0x00000000      0x12f fs/fat/libfat.o
+ .comment       0x00000000      0x6b5 lib/libgeneric.o
+ .comment       0x00000000       0x65 lib/zlib/libz.o
+ .comment       0x00000000       0x65 memtest/libsunxi_memtest.o
+ .comment       0x00000000      0x5eb sprite/libsprite.o
+ .comment       0x00000000      0x3f2 usb_sunxi/libsunxi_usb.o
+ .comment       0x00000000       0x65 board/sunxi/sun8iw8/libsun8iw8.o
+ .comment       0x00000000      0x5eb board/sunxi/libsunxi.o
+ .comment       0x00000000       0x65 /home/welcome/Documents/v3s/qt/u-boot-2011.09/arch/arm/lib/eabi_compat.o
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+ .note.GNU-stack
+                0x00000000        0x0 board/sunxi/sun8iw8/standby/libstandby.o
+ .note.GNU-stack
+                0x00000000        0x0 arch/arm/cpu/armv7/libarmv7.o
+ .note.GNU-stack
+                0x00000000        0x0 arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+ .note.GNU-stack
+                0x00000000        0x0 arch/arm/lib/libarm.o
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.o
+ .note.GNU-stack
+                0x00000000        0x0 disk/libdisk.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/dma/libdma.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/i2c/libi2c.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/mmc/libmmc.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/pcmcia/libpcmcia.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/power/libpower.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/pwm/libsunxi_pwm.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/rtc/librtc.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/serial/libserial.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/smc/libsmc.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/spi/libspi.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/spinor/libspinor.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/srclib/libjpeddec.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/storage_type/libstorage_type.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/video_sunxi/libvideo_sunxi.o
+ .note.GNU-stack
+                0x00000000        0x0 fs/aw_fs/libawfat.o
+ .note.GNU-stack
+                0x00000000        0x0 fs/fat/libfat.o
+ .note.GNU-stack
+                0x00000000        0x0 lib/libgeneric.o
+ .note.GNU-stack
+                0x00000000        0x0 lib/zlib/libz.o
+ .note.GNU-stack
+                0x00000000        0x0 memtest/libsunxi_memtest.o
+ .note.GNU-stack
+                0x00000000        0x0 sprite/libsprite.o
+ .note.GNU-stack
+                0x00000000        0x0 usb_sunxi/libsunxi_usb.o
+ .note.GNU-stack
+                0x00000000        0x0 board/sunxi/sun8iw8/libsun8iw8.o
+ .note.GNU-stack
+                0x00000000        0x0 board/sunxi/libsunxi.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/welcome/Documents/v3s/qt/u-boot-2011.09/arch/arm/lib/eabi_compat.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_lshrdi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashrdi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashldi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_addsubdf3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_muldivdf3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_fixdfsi.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_truncdfsf2.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_addsubsf3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_muldivsf3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_fixsfsi.o)
+
+.ARM.attributes
+                0x00000000       0x3d
+ .ARM.attributes
+                0x00000000       0x3b arch/arm/cpu/armv7/sun8iw8/spare_head.o
+ .ARM.attributes
+                0x0000003b       0x2d arch/arm/cpu/armv7/start.o
+ .ARM.attributes
+                0x00000068       0x3d board/sunxi/sun8iw8/standby/libstandby.o
+ .ARM.attributes
+                0x000000a5       0x3b arch/arm/cpu/armv7/libarmv7.o
+ .ARM.attributes
+                0x000000e0       0x3d arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+ .ARM.attributes
+                0x0000011d       0x3b arch/arm/lib/libarm.o
+ .ARM.attributes
+                0x00000158       0x3b common/libcommon.o
+ .ARM.attributes
+                0x00000193       0x3b disk/libdisk.o
+ .ARM.attributes
+                0x000001ce       0x3b drivers/dma/libdma.o
+ .ARM.attributes
+                0x00000209       0x3b drivers/i2c/libi2c.o
+ .ARM.attributes
+                0x00000244       0x3b drivers/mmc/libmmc.o
+ .ARM.attributes
+                0x0000027f       0x3b drivers/pcmcia/libpcmcia.o
+ .ARM.attributes
+                0x000002ba       0x3b drivers/power/libpower.o
+ .ARM.attributes
+                0x000002f5       0x3b drivers/pwm/libsunxi_pwm.o
+ .ARM.attributes
+                0x00000330       0x3b drivers/rtc/librtc.o
+ .ARM.attributes
+                0x0000036b       0x3b drivers/serial/libserial.o
+ .ARM.attributes
+                0x000003a6       0x3d drivers/smc/libsmc.o
+ .ARM.attributes
+                0x000003e3       0x3b drivers/spi/libspi.o
+ .ARM.attributes
+                0x0000041e       0x3b drivers/spinor/libspinor.o
+ .ARM.attributes
+                0x00000459       0x3d drivers/srclib/libjpeddec.o
+ .ARM.attributes
+                0x00000496       0x3b drivers/storage_type/libstorage_type.o
+ .ARM.attributes
+                0x000004d1       0x3b drivers/video_sunxi/libvideo_sunxi.o
+ .ARM.attributes
+                0x0000050c       0x3b fs/aw_fs/libawfat.o
+ .ARM.attributes
+                0x00000547       0x3b fs/fat/libfat.o
+ .ARM.attributes
+                0x00000582       0x3b lib/libgeneric.o
+ .ARM.attributes
+                0x000005bd       0x3b lib/zlib/libz.o
+ .ARM.attributes
+                0x000005f8       0x3b memtest/libsunxi_memtest.o
+ .ARM.attributes
+                0x00000633       0x3b sprite/libsprite.o
+ .ARM.attributes
+                0x0000066e       0x3b usb_sunxi/libsunxi_usb.o
+ .ARM.attributes
+                0x000006a9       0x3b board/sunxi/sun8iw8/libsun8iw8.o
+ .ARM.attributes
+                0x000006e4       0x3b board/sunxi/libsunxi.o
+ .ARM.attributes
+                0x0000071f       0x3b /home/welcome/Documents/v3s/qt/u-boot-2011.09/arch/arm/lib/eabi_compat.o
+ .ARM.attributes
+                0x0000075a       0x23 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_lshrdi3.o)
+ .ARM.attributes
+                0x0000077d       0x23 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashrdi3.o)
+ .ARM.attributes
+                0x000007a0       0x23 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashldi3.o)
+ .ARM.attributes
+                0x000007c3       0x23 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x000007e6       0x23 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000809       0x23 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_fixdfsi.o)
+ .ARM.attributes
+                0x0000082c       0x23 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_truncdfsf2.o)
+ .ARM.attributes
+                0x0000084f       0x23 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_addsubsf3.o)
+ .ARM.attributes
+                0x00000872       0x23 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_muldivsf3.o)
+ .ARM.attributes
+                0x00000895       0x23 /home/welcome/Documents/v3s/qt/gcc-linaro/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_arm_fixsfsi.o)
+
+.debug_aranges  0x00000000     0x1860
+ .debug_aranges
+                0x00000000       0x20 arch/arm/cpu/armv7/start.o
+ .debug_aranges
+                0x00000020      0x120 board/sunxi/sun8iw8/standby/libstandby.o
+ .debug_aranges
+                0x00000140       0x60 arch/arm/cpu/armv7/libarmv7.o
+ .debug_aranges
+                0x000001a0      0x1a0 arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+ .debug_aranges
+                0x00000340       0xc0 arch/arm/lib/libarm.o
+ .debug_aranges
+                0x00000400      0x4e0 common/libcommon.o
+ .debug_aranges
+                0x000008e0       0x40 disk/libdisk.o
+ .debug_aranges
+                0x00000920       0x20 drivers/dma/libdma.o
+ .debug_aranges
+                0x00000940       0x20 drivers/i2c/libi2c.o
+ .debug_aranges
+                0x00000960       0x40 drivers/mmc/libmmc.o
+ .debug_aranges
+                0x000009a0       0xa0 drivers/power/libpower.o
+ .debug_aranges
+                0x00000a40       0x20 drivers/pwm/libsunxi_pwm.o
+ .debug_aranges
+                0x00000a60       0x40 drivers/serial/libserial.o
+ .debug_aranges
+                0x00000aa0       0x40 drivers/smc/libsmc.o
+ .debug_aranges
+                0x00000ae0       0x20 drivers/spi/libspi.o
+ .debug_aranges
+                0x00000b00       0x20 drivers/spinor/libspinor.o
+ .debug_aranges
+                0x00000b20       0x80 drivers/srclib/libjpeddec.o
+ .debug_aranges
+                0x00000ba0       0x20 drivers/storage_type/libstorage_type.o
+ .debug_aranges
+                0x00000bc0      0x4a0 drivers/video_sunxi/libvideo_sunxi.o
+ .debug_aranges
+                0x00001060       0x40 fs/aw_fs/libawfat.o
+ .debug_aranges
+                0x000010a0       0x60 fs/fat/libfat.o
+ .debug_aranges
+                0x00001100      0x1e0 lib/libgeneric.o
+ .debug_aranges
+                0x000012e0       0x20 lib/zlib/libz.o
+ .debug_aranges
+                0x00001300       0x20 memtest/libsunxi_memtest.o
+ .debug_aranges
+                0x00001320      0x1e0 sprite/libsprite.o
+ .debug_aranges
+                0x00001500      0x140 usb_sunxi/libsunxi_usb.o
+ .debug_aranges
+                0x00001640       0x20 board/sunxi/sun8iw8/libsun8iw8.o
+ .debug_aranges
+                0x00001660      0x1e0 board/sunxi/libsunxi.o
+ .debug_aranges
+                0x00001840       0x20 /home/welcome/Documents/v3s/qt/u-boot-2011.09/arch/arm/lib/eabi_compat.o
+
+.debug_frame    0x00000000     0xd054
+ .debug_frame   0x00000000      0x24c board/sunxi/sun8iw8/standby/libstandby.o
+ .debug_frame   0x0000024c      0x218 arch/arm/cpu/armv7/libarmv7.o
+ .debug_frame   0x00000464      0xe90 arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+ .debug_frame   0x000012f4      0x47c arch/arm/lib/libarm.o
+ .debug_frame   0x00001770     0x1e60 common/libcommon.o
+ .debug_frame   0x000035d0      0x168 disk/libdisk.o
+ .debug_frame   0x00003738      0x144 drivers/dma/libdma.o
+ .debug_frame   0x0000387c       0xc4 drivers/i2c/libi2c.o
+ .debug_frame   0x00003940      0x62c drivers/mmc/libmmc.o
+ .debug_frame   0x00003f6c      0x90c drivers/power/libpower.o
+ .debug_frame   0x00004878       0xd4 drivers/pwm/libsunxi_pwm.o
+ .debug_frame   0x0000494c      0x180 drivers/serial/libserial.o
+ .debug_frame   0x00004acc       0x20 drivers/smc/libsmc.o
+ .debug_frame   0x00004aec      0x140 drivers/spi/libspi.o
+ .debug_frame   0x00004c2c      0x2fc drivers/spinor/libspinor.o
+ .debug_frame   0x00004f28      0x51c drivers/srclib/libjpeddec.o
+ .debug_frame   0x00005444      0x4e0 drivers/storage_type/libstorage_type.o
+ .debug_frame   0x00005924     0x3b4c drivers/video_sunxi/libvideo_sunxi.o
+ .debug_frame   0x00009470      0x640 fs/aw_fs/libawfat.o
+ .debug_frame   0x00009ab0      0x3c0 fs/fat/libfat.o
+ .debug_frame   0x00009e70      0x920 lib/libgeneric.o
+ .debug_frame   0x0000a790      0x118 lib/zlib/libz.o
+ .debug_frame   0x0000a8a8      0x258 memtest/libsunxi_memtest.o
+ .debug_frame   0x0000ab00      0x9e8 sprite/libsprite.o
+ .debug_frame   0x0000b4e8      0x9b4 usb_sunxi/libsunxi_usb.o
+ .debug_frame   0x0000be9c       0xac board/sunxi/sun8iw8/libsun8iw8.o
+ .debug_frame   0x0000bf48     0x10d4 board/sunxi/libsunxi.o
+ .debug_frame   0x0000d01c       0x38 /home/welcome/Documents/v3s/qt/u-boot-2011.09/arch/arm/lib/eabi_compat.o
+
+.debug_loc      0x00000000    0x535f7
+ .debug_loc     0x00000000      0x6bb board/sunxi/sun8iw8/standby/libstandby.o
+ .debug_loc     0x000006bb      0x766 arch/arm/cpu/armv7/libarmv7.o
+ .debug_loc     0x00000e21     0x4193 arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+ .debug_loc     0x00004fb4      0xa66 arch/arm/lib/libarm.o
+ .debug_loc     0x00005a1a     0xe0f9 common/libcommon.o
+ .debug_loc     0x00013b13      0x808 disk/libdisk.o
+ .debug_loc     0x0001431b      0x497 drivers/dma/libdma.o
+ .debug_loc     0x000147b2      0x6ca drivers/i2c/libi2c.o
+ .debug_loc     0x00014e7c     0x3e26 drivers/mmc/libmmc.o
+ .debug_loc     0x00018ca2     0x1fca drivers/power/libpower.o
+ .debug_loc     0x0001ac6c      0x47b drivers/pwm/libsunxi_pwm.o
+ .debug_loc     0x0001b0e7      0x296 drivers/serial/libserial.o
+ .debug_loc     0x0001b37d      0x7fe drivers/spi/libspi.o
+ .debug_loc     0x0001bb7b      0xf45 drivers/spinor/libspinor.o
+ .debug_loc     0x0001cac0     0x407c drivers/srclib/libjpeddec.o
+ .debug_loc     0x00020b3c      0xedc drivers/storage_type/libstorage_type.o
+ .debug_loc     0x00021a18    0x13bfc drivers/video_sunxi/libvideo_sunxi.o
+ .debug_loc     0x00035614     0x3cf4 fs/aw_fs/libawfat.o
+ .debug_loc     0x00039308     0x3018 fs/fat/libfat.o
+ .debug_loc     0x0003c320     0x3e6f lib/libgeneric.o
+ .debug_loc     0x0004018f     0x2231 lib/zlib/libz.o
+ .debug_loc     0x000423c0     0x1414 memtest/libsunxi_memtest.o
+ .debug_loc     0x000437d4     0x3445 sprite/libsprite.o
+ .debug_loc     0x00046c19     0x4ce6 usb_sunxi/libsunxi_usb.o
+ .debug_loc     0x0004b8ff       0xcb board/sunxi/sun8iw8/libsun8iw8.o
+ .debug_loc     0x0004b9ca     0x7bef board/sunxi/libsunxi.o
+ .debug_loc     0x000535b9       0x3e /home/welcome/Documents/v3s/qt/u-boot-2011.09/arch/arm/lib/eabi_compat.o
+
+.debug_ranges   0x00000000     0x34b8
+ .debug_ranges  0x00000000       0x60 board/sunxi/sun8iw8/standby/libstandby.o
+ .debug_ranges  0x00000060       0x90 arch/arm/cpu/armv7/libarmv7.o
+ .debug_ranges  0x000000f0      0x470 arch/arm/cpu/armv7/sun8iw8/libsun8iw8.o
+ .debug_ranges  0x00000560       0x18 arch/arm/lib/libarm.o
+ .debug_ranges  0x00000578      0x938 common/libcommon.o
+ .debug_ranges  0x00000eb0       0x30 drivers/i2c/libi2c.o
+ .debug_ranges  0x00000ee0      0x5b8 drivers/mmc/libmmc.o
+ .debug_ranges  0x00001498       0x18 drivers/power/libpower.o
+ .debug_ranges  0x000014b0       0xb0 drivers/pwm/libsunxi_pwm.o
+ .debug_ranges  0x00001560      0x130 drivers/spi/libspi.o
+ .debug_ranges  0x00001690       0xb0 drivers/spinor/libspinor.o
+ .debug_ranges  0x00001740      0x320 drivers/srclib/libjpeddec.o
+ .debug_ranges  0x00001a60      0x8d0 drivers/video_sunxi/libvideo_sunxi.o
+ .debug_ranges  0x00002330      0x1d8 fs/aw_fs/libawfat.o
+ .debug_ranges  0x00002508      0x3b8 fs/fat/libfat.o
+ .debug_ranges  0x000028c0      0x2a8 lib/libgeneric.o
+ .debug_ranges  0x00002b68       0x48 lib/zlib/libz.o
+ .debug_ranges  0x00002bb0       0x68 sprite/libsprite.o
+ .debug_ranges  0x00002c18      0x4b0 usb_sunxi/libsunxi_usb.o
+ .debug_ranges  0x000030c8      0x3f0 board/sunxi/libsunxi.o
